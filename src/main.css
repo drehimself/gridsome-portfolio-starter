@@ -8,6 +8,12 @@ a:hover {
   @apply text-green-800;
 }
 
+.active {
+  font-weight: bold;
+  @apply border-black border-b;
+  /* border-bottom: 1px solid black; */
+}
+
 .container-inner {
   padding-left: 1rem;
   padding-right: 1rem;

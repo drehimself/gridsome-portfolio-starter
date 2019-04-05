@@ -3,20 +3,23 @@
     <header class="border-t-14 border-green-700">
       <nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center py-8">
         <div class="mb-8 sm:mb-0">
-          <a href="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></a>
+          <g-link to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
         </div>
         <ul class="uppercase tracking-wide font-bold flex items-center">
           <li class="mr-8">
-            <a href="#" v-scroll-to="'#projects'" class="text-gray-800 hover:text-gray-600">Projects</a>
+            <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-gray-800 hover:text-gray-600">Projects</a>
+            <g-link v-else to="/#projects" class="text-gray-800 hover:text-gray-600">Projects</g-link>
           </li>
           <li class="mr-8">
-            <a href="#" v-scroll-to="'#about'" class="text-gray-800 hover:text-gray-600">About</a>
+            <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-gray-800 hover:text-gray-600">About</a>
+            <g-link v-else to="/#about" class="text-gray-800 hover:text-gray-600">About</g-link>
           </li>
           <li class="mr-8">
-            <a href="#" v-scroll-to="'#contact'" class="text-gray-800 hover:text-gray-600">Contact</a>
+            <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-gray-800 hover:text-gray-600">Contact</a>
+            <g-link v-else to="/#contact" class="text-gray-800 hover:text-gray-600">Contact</g-link>
           </li>
           <li>
-            <a href="#" class="text-gray-800 hover:text-gray-600">Blog</a>
+            <g-link to="/blog" class="text-gray-800 hover:text-gray-600">Blog</g-link>
           </li>
         </ul>
       </nav>
