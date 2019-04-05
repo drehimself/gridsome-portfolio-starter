@@ -2,7 +2,7 @@
   <div class="font-sans text-gray-800 leading-normal flex flex-col min-h-screen">
     <header class="border-t-14 border-green-700">
       <nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center py-8">
-        <div class="mb-4 sm:mb-0">
+        <div class="mb-8 sm:mb-0">
           <a href="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></a>
         </div>
         <ul class="uppercase tracking-wide font-bold flex items-center">
