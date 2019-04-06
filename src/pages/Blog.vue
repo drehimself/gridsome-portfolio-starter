@@ -17,14 +17,25 @@
           <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
         </div>
       </div> <!-- end post -->
+
+      <div v-if="$page.posts.pageInfo.totalPages > 1" class="flex justify-between text-xl items-center">
+        <g-link :to="previousPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showPreviousPage }">&larr; Prev</g-link>
+        <div class="text-base">Page {{ $page.posts.pageInfo.currentPage }} of {{ $page.posts.pageInfo.totalPages }}</div>
+        <g-link :to="nextPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showNextPage }">Next &rarr;</g-link>
+      </div>
     </div>
 
   </Layout>
 </template>
 
 <page-query>
-query Posts {
-  posts: allPost (sortBy: "date", order: DESC) {
+query Posts ($page: Int) {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page) @paginate {
+    totalCount
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges {
       node {
         id
@@ -43,6 +54,29 @@ query Posts {
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  computed: {
+    showPreviousPage() {
+      return this.$page.posts.pageInfo.currentPage !== 1
+    },
+    previousPage() {
+      return [0, 1].includes(this.$page.posts.pageInfo.currentPage - 1)
+        ? this.base
+        : `${this.base}/${this.$page.posts.pageInfo.currentPage - 1}`;
+    },
+    showNextPage() {
+      return this.$page.posts.pageInfo.currentPage !== this.$page.posts.pageInfo.totalPages
+    },
+    nextPage(currentPage, totalPages) {
+      return this.$page.posts.pageInfo.totalPages > this.$page.posts.pageInfo.currentPage
+        ? `${this.base}/${this.$page.posts.pageInfo.currentPage + 1}`
+        : `${this.base}/${this.$page.posts.pageInfo.currentPage}`;
+    }
+  },
+  data() {
+    return {
+      base: '/blog'
+    }
   }
 }
 </script>
