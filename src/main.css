@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-green-700;
+  @apply text-green-700 font-bold;
 }
 
 a:hover {

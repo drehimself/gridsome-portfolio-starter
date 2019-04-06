@@ -1,60 +1,43 @@
 <template>
   <Layout>
     <div class="container-inner mx-auto py-16">
-      <div class="post border-gray-400 border-b mb-12">
-        <h2 class="text-3xl font-bold"><a href="#" class="text-gray-800">Gridsome Static Sites with Vue</a></h2>
+      <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
+        <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-gray-800">{{ post.node.title }}</g-link></h2>
         <div class="text-gray-700 mb-4">
-          <span>Jun 7, 2019</span>
+          <span>{{ post.node.date }}</span>
           <span> &middot; </span>
-          <span>5 min read</span>
+          <span>{{ post.node.readTime }} min read</span>
         </div>
 
         <div class="text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et non inventore magnam praesentium corrupti. Est velit dignissimos autem quas magni porro qui fugit, eveniet mollitia, fuga odio necessitatibus blanditiis eligendi.
+          {{ post.node.summary }}
         </div>
 
         <div class="mb-8">
-          <a href="#" class="font-bold uppercase">Read More</a>
-        </div>
-      </div> <!-- end post -->
-
-      <div class="post border-gray-400 border-b mb-12">
-        <h2 class="text-3xl font-bold"><a href="#" class="text-gray-800">Gridsome Static Sites with Vue</a></h2>
-        <div class="text-gray-700 mb-4">
-          <span>Jun 7, 2019</span>
-          <span> &middot; </span>
-          <span>5 min read</span>
-        </div>
-
-        <div class="text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et non inventore magnam praesentium corrupti. Est velit dignissimos autem quas magni porro qui fugit, eveniet mollitia, fuga odio necessitatibus blanditiis eligendi.
-        </div>
-
-        <div class="mb-8">
-          <a href="#" class="font-bold uppercase">Read More</a>
-        </div>
-      </div> <!-- end post -->
-
-      <div class="post border-gray-400 border-b mb-12">
-        <h2 class="text-3xl font-bold"><a href="#" class="text-gray-800">Gridsome Static Sites with Vue</a></h2>
-        <div class="text-gray-700 mb-4">
-          <span>Jun 7, 2019</span>
-          <span> &middot; </span>
-          <span>5 min read</span>
-        </div>
-
-        <div class="text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et non inventore magnam praesentium corrupti. Est velit dignissimos autem quas magni porro qui fugit, eveniet mollitia, fuga odio necessitatibus blanditiis eligendi.
-        </div>
-
-        <div class="mb-8">
-          <a href="#" class="font-bold uppercase">Read More</a>
+          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
         </div>
       </div> <!-- end post -->
     </div>
 
   </Layout>
 </template>
+
+<page-query>
+query Posts {
+  posts: allPost (sortBy: "date", order: DESC) {
+    edges {
+      node {
+        id
+        title
+        date (format: "MMMM D, Y")
+        summary
+        readTime
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
