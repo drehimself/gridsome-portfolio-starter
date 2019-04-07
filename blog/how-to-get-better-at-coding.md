@@ -97,3 +97,7 @@ class Foo extends bar
     }
 }
 ```
+
+## Random Image
+
+![mojave](./images/mojave-night.jpg)

@@ -36,6 +36,7 @@ You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and
 
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
 
+![background](./images/background.jpg)
 
 ### 1. Install Gridsome CLI tool
 
