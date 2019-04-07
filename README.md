@@ -2,6 +2,8 @@
 
 A simple portfolio starter theme for Gridsome
 
+![screenshot](https://user-images.githubusercontent.com/4316355/55691365-a2403380-596b-11e9-93be-05b846ec7760.jpg)
+
 ## Demo URL
 
 [https://gridsome-portfolio-starter.netlify.com](https://gridsome-portfolio-starter.netlify.com)
@@ -22,7 +24,7 @@ A simple portfolio starter theme for Gridsome
 3. `cd gridsome-portfolio-starter`
 4. `gridsome develop` to start a local dev server at `http://localhost:8080`
 
-Notes
+## Notes
 
  - Based on my [personal portfolio website](https://andremadarang.com). I wanted to create an open source version with more features.
  - Check out a [screencast I did](https://www.youtube.com/watch?v=uHo6o1TNQeE) where I go through the process of building my website.
