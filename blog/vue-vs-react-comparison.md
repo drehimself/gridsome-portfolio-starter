@@ -1,7 +1,6 @@
 ---
 title: Vue vs React Comparison
 date: 2019-03-27
-read_time: 12
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 ---
 

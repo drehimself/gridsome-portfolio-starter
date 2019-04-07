@@ -1,7 +1,6 @@
 ---
 title: How to Get Better At Coding
 date: 2019-04-05
-read_time: 7
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 ---
 

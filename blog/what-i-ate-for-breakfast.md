@@ -1,7 +1,6 @@
 ---
 title: What I Ate for Breakfast
 date: 2019-03-21
-read_time: 15
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 ---
 
