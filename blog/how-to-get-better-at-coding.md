@@ -5,4 +5,63 @@ read_time: 7
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus placeat quia! Voluptates corporis atque itaque, quae in aperiam reiciendis id, beatae dicta optio rem, cumque illum tempore accusamus blanditiis consequuntur doloribus accusantium. Expedita minus suscipit vel nulla.
+Lorem ipsum dolor sit amet, [consectetur adipisicing](https://google.ca) elit. Praesentium inventore hic possimus, cum nesciunt ea debitis, tempora officia perferendis vero ratione nam laudantium aliquid voluptatem velit? Open `/src/layouts.vue` and then edit the `main.css` file.
+
+> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil `layout.vue` and then edit the `main.scss` file.
+
+```js
+<template>
+  <Layout>
+    <div class="container-inner mx-auto my-16">
+      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
+      <div class="text-xl text-gray-600 mb-8">{{ $page.post.date }}</div>
+      <div class="markdown-body" v-html="$page.post.content" />
+    </div>
+  </Layout>
+</template>
+```
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit. Praesentium inventore hic possimus, cum nesciunt ea debitis, tempora officia perferendis vero ratione nam laudantium aliquid voluptatem velit? Open `/src/layouts.vue` and then edit the `main.css` file.
+
+---
+
+## Typography
+
+Here is how some typography styles are rendered:
+
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
+The quick brown fox jumps over the lazy dog
+
+<s>The quick brown fox jumps over the lazy dog</s>
+
+<u>The quick brown fox jumps over the lazy dog</u>
+
+_The quick brown fox jumps over the lazy dog_
+
+**The quick brown fox jumps over the lazy dog**
+
+`The quick brown fox jumps over the lazy dog`
+
+<small>The quick brown fox jumps over the lazy dog</small>
+
+> The quick brown fox jumps over the lazy dog
+
+[The quick brown fox jumps over the lazy dog](https://google.ca)
+
+```php
+<?php
+
+class Foo extends bar
+{
+    public function fooBar()
+    {
+        //
+    }
+}
+```

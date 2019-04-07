@@ -21,7 +21,11 @@ module.exports = {
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
-        remark: {}
+        remark: {
+          plugins: [
+            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          ]
+        }
       }
     }
   ],
