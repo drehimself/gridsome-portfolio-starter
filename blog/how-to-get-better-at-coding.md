@@ -23,6 +23,39 @@ Lorem ipsum dolor sit amet, [consectetur adipisicing](https://google.ca) elit. P
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit. Praesentium inventore hic possimus, cum nesciunt ea debitis, tempora officia perferendis vero ratione nam laudantium aliquid voluptatem velit? Open `/src/layouts.vue` and then edit the `main.css` file.
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit. Praesentium inventore hic possimus, cum nesciunt ea debitis, tempora officia perferendis vero ratione nam laudantium aliquid voluptatem velit? Open `/src/layouts.vue` and then edit the `main.css` file.
+
+```js
+<script>
+export default {
+  props: ['totalPages', 'currentPage'],
+  computed: {
+    showPreviousPage() {
+      return this.currentPage !== 1
+    },
+    previousPage() {
+      return [0, 1].includes(this.currentPage - 1)
+        ? this.base
+        : `${this.base}/${this.currentPage - 1}`;
+    },
+    showNextPage() {
+      return this.currentPage !== this.totalPages
+    },
+    nextPage(currentPage, totalPages) {
+      return this.totalPages > this.currentPage
+        ? `${this.base}/${this.currentPage + 1}`
+        : `${this.base}/${this.currentPage}`;
+    }
+  },
+  data() {
+    return {
+      base: '/blog'
+    }
+  }
+}
+</script>
+```
+
 ---
 
 ## Typography

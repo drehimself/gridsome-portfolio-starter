@@ -18,13 +18,12 @@
         </div>
       </div> <!-- end post -->
 
-      <div v-if="$page.posts.pageInfo.totalPages > 1" class="flex justify-between text-xl items-center">
-        <g-link :to="previousPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showPreviousPage }">&larr; Prev</g-link>
-        <div class="text-base">Page {{ $page.posts.pageInfo.currentPage }} of {{ $page.posts.pageInfo.totalPages }}</div>
-        <g-link :to="nextPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showNextPage }">Next &rarr;</g-link>
-      </div>
+      <pagination-posts
+        v-if="$page.posts.pageInfo.totalPages > 1"
+        :totalPages="$page.posts.pageInfo.totalPages"
+        :currentPage="$page.posts.pageInfo.currentPage"
+      />
     </div>
-
   </Layout>
 </template>
 
@@ -51,32 +50,14 @@ query Posts ($page: Int) {
 </page-query>
 
 <script>
+import PaginationPosts from '../components/PaginationPosts'
+
 export default {
   metaInfo: {
-    title: 'Home'
+    title: 'Blog'
   },
-  computed: {
-    showPreviousPage() {
-      return this.$page.posts.pageInfo.currentPage !== 1
-    },
-    previousPage() {
-      return [0, 1].includes(this.$page.posts.pageInfo.currentPage - 1)
-        ? this.base
-        : `${this.base}/${this.$page.posts.pageInfo.currentPage - 1}`;
-    },
-    showNextPage() {
-      return this.$page.posts.pageInfo.currentPage !== this.$page.posts.pageInfo.totalPages
-    },
-    nextPage(currentPage, totalPages) {
-      return this.$page.posts.pageInfo.totalPages > this.$page.posts.pageInfo.currentPage
-        ? `${this.base}/${this.$page.posts.pageInfo.currentPage + 1}`
-        : `${this.base}/${this.$page.posts.pageInfo.currentPage}`;
-    }
-  },
-  data() {
-    return {
-      base: '/blog'
-    }
+  components: {
+    PaginationPosts
   }
 }
 </script>
