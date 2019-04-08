@@ -20,6 +20,7 @@
 
       <pagination-posts
         v-if="$page.posts.pageInfo.totalPages > 1"
+        base="/blog"
         :totalPages="$page.posts.pageInfo.totalPages"
         :currentPage="$page.posts.pageInfo.currentPage"
       />

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  props: ['totalPages', 'currentPage'],
+  props: ['base', 'totalPages', 'currentPage'],
   computed: {
     showPreviousPage() {
       return this.currentPage !== 1
@@ -25,11 +25,6 @@ export default {
       return this.totalPages > this.currentPage
         ? `${this.base}/${this.currentPage + 1}`
         : `${this.base}/${this.currentPage}`;
-    }
-  },
-  data() {
-    return {
-      base: '/blog'
     }
   }
 }
