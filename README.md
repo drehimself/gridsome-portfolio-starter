@@ -11,9 +11,11 @@ A simple portfolio starter theme for Gridsome
 ## Features
 
 - Clean and minimal design
-- [Tailwind CSS v1.0](https://tailwindcss.com)
-- Scroll to sections with [vue-scrollto](https://github.com/rigor789/vue-scrollto)
-- Blog with markdown content for posts and basic pagination
+- [Tailwind CSS v1.0](https://tailwindcss.com) (with PurgeCSS)
+- Scroll to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
+- Blog with markdown content for posts
+- Tags for posts
+- Basic pagination
 - Syntax highlighting with [Shiki](https://shiki.matsu.io) (using [this gridsome plugin](https://gridsome.org/plugins/gridsome-plugin-remark-shiki))
 - 404 Page
 
