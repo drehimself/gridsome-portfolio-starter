@@ -34,6 +34,28 @@ module.exports = {
           ]
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: 'Gridsome Portfolio Starter Blog',
+          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
+          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.summary,
+          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
+          author: 'Andre Madarang',
+          date: node.date
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
     }
   ],
   transformers: {

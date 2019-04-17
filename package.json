@@ -12,6 +12,7 @@
     "@gridsome/transformer-remark": "^0.2.1",
     "gridsome": "^0.5.0",
     "gridsome-plugin-remark-shiki": "^0.3.0",
+    "gridsome-plugin-rss": "^1.1.0",
     "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
