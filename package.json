@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@gridsome/plugin-sitemap": "^0.1.1",
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
     "gridsome": "^0.5.0",

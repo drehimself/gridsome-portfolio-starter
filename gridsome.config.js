@@ -15,6 +15,8 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
   siteName: 'Gridsome Portfolio Starter',
+  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1.0',
+  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -56,7 +58,13 @@ module.exports = {
           name: 'rss.xml'
         }
       }
-    }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+      }
+    },
   ],
   transformers: {
     remark: {

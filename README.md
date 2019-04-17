@@ -19,6 +19,7 @@ A simple portfolio starter theme for Gridsome
 - Syntax highlighting with [Shiki](https://shiki.matsu.io) (using [this gridsome plugin](https://gridsome.org/plugins/gridsome-plugin-remark-shiki))
 - 404 Page
 - RSS Feed
+- Sitemap in XML
 
 ## Installation
 
