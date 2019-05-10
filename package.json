@@ -9,9 +9,9 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",
     "@gridsome/plugin-sitemap": "^0.1.1",
-    "@gridsome/source-filesystem": "^0.3.0",
-    "@gridsome/transformer-remark": "^0.2.1",
-    "gridsome": "^0.5.8",
+    "@gridsome/source-filesystem": "^0.4.1",
+    "@gridsome/transformer-remark": "^0.3.0",
+    "gridsome": "^0.6.0",
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.1.0",
     "vue-scrollto": "^2.15.0"
