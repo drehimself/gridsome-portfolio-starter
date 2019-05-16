@@ -9,6 +9,23 @@ module.exports = {
       padding: '1rem'
     },
     colors: {
+      background: {
+        primary: 'var(--bg-background-primary)',
+        secondary: 'var(--bg-background-secondary)',
+        ternary: 'var(--bg-background-ternary)',
+
+        form: 'var(--bg-background-form)',
+      },
+
+      copy: {
+        primary: 'var(--text-copy-primary)',
+        secondary: 'var(--text-copy-hover)',
+      },
+
+      'border-color': {
+        primary: 'var(--border-border-color-primary)',
+      },
+
       transparent: 'transparent',
 
       black: '#000',

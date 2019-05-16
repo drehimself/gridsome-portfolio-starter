@@ -73,7 +73,7 @@
     </div>
 
     <div class="overflow-x-hidden">
-      <div class="contact-me bg-gray-100 pt-16">
+      <div class="contact-me bg-background-secondary pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
           <h2 class="font-bold mb-6" id="contact">Contact me:</h2>
 
@@ -87,28 +87,28 @@
             <form action="#" class="mb-12">
               <div class="flex flex-wrap mb-6 -mx-4">
                   <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
-                      <label class="block mb-2 text-gray-800" for="name">
+                      <label class="block mb-2 text-copy-primary" for="name">
                           Name
                       </label>
 
-                      <input type="text" name="name" id="name" placeholder="Jon Snow" class="block w-full border shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="text" name="name" id="name" placeholder="Jon Snow" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
                   </div>
 
                   <div class="w-full px-4 md:w-1/2">
-                      <label class="block text-gray-800 mb-2" for="email">
+                      <label class="block text-copy-primary mb-2" for="email">
                           Email Address
                       </label>
 
-                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full border shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
                   </div>
               </div>
 
               <div class="w-full mb-12">
-                  <label class="block text-gray-800 mb-2" for="message">
+                  <label class="block text-copy-primary mb-2" for="message">
                       Message
                   </label>
 
-                  <textarea id="message" rows="5" name="message" class="block w-full border shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="Enter your message here." required></textarea>
+                  <textarea id="message" rows="5" name="message" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none focus:border-green-700 mb-2 px-4 py-4" placeholder="Enter your message here." required></textarea>
               </div>
 
               <div class="flex justify-end w-full">
@@ -120,7 +120,7 @@
       </div> <!-- end contact-me -->
     </div>
 
-    <div class="newsletter bg-gray-300">
+    <div class="newsletter bg-background-ternary">
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
         <h2 class="text-2xl font-bold mb-8">Join my Newsletter</h2>
 
@@ -129,7 +129,7 @@
 
           <form action="#">
             <div class="flex flex-col sm:flex-row">
-              <input type="email" name="email" placeholder="Your email address" class="flex-1 bg-white rounded sm:rounded-r-none px-4 py-4 leading-normal border sm:border-r-0 shadow outline-none focus:border-green-700 z-10" required>
+              <input type="email" name="email" placeholder="Your email address" class="flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10" required>
               <button data-element="submit" class="flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0">
                 <span>Subscribe</span>
               </button>
