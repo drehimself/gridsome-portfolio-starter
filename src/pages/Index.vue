@@ -120,7 +120,7 @@
       </div> <!-- end contact-me -->
     </div>
 
-    <div class="newsletter bg-background-ternary">
+    <div class="newsletter bg-background-tertiary">
       <div class="container-inner mx-auto py-16 pb-8 text-center textl-xl">
         <h2 class="text-2xl font-bold mb-8">Join my Newsletter</h2>
 
