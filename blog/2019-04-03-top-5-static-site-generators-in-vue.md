@@ -6,6 +6,8 @@ summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earu
 tags: ['frontend', 'coding', 'vue']
 ---
 
+![background](./images/blog_bg_3.jpg)
+
 An h1 header
 ============
 
