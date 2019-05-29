@@ -17,8 +17,16 @@
   --border-border-color-primary: white;
 }
 
+.theme-light .search-hover:hover {
+  background: #f0fff4;
+}
+
 .theme-dark .markdown-body {
     color: #24292e;
+}
+
+.theme-dark .search-hover:hover {
+  background: #2d3748;
 }
 
 .theme-dark {

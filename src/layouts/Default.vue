@@ -6,30 +6,33 @@
           <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
           <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link>
         </div>
-        <div class="block sm:hidden">
+        <div class="block lg:hidden">
           <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
             <svg class="current-color h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" fill="gray" /></svg>
           </button>
         </div>
         <ul
-          class="uppercase tracking-wide font-bold w-full block flex-grow sm:flex sm:flex-initial sm:w-auto items-center mt-8 sm:mt-0"
+          class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
           :class="isOpen ? 'block': 'hidden'"
         >
-          <li class="mr-8 mb-6 sm:mb-0">
+          <li class="mr-8 mb-6 lg:mb-0">
+            <search-input />
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
             <a href="#" class="text-copy-primary hover:text-gray-600" @click.prevent="toggleTheme">
               <svg v-if="theme === 'theme-light'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
               <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
             </a>
           </li>
-          <li class="mr-8 mb-6 sm:mb-0">
+          <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#projects" v-scroll-to="'#projects'" class="text-copy-primary hover:text-gray-600">Projects</a>
             <g-link v-else to="/#projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
           </li>
-          <li class="mr-8 mb-6 sm:mb-0">
+          <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
           </li>
-          <li class="mr-8 mb-6 sm:mb-0">
+          <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
@@ -39,12 +42,13 @@
         </ul>
       </nav>
     </header>
+
     <div class="flex-grow">
       <slot/>
     </div>
     <footer class="bg-green-700 text-white">
-      <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-8">
-        <div class="mb-8 sm:mb-0">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
+        <div class="mb-8 lg:mb-0">
           <div>Copyright 2019. All rights reserved.</div>
           <div>
             <a href="rss.xml" class="text-white hover:text-gray-400 font-normal">RSS Feed</a> |
@@ -100,14 +104,20 @@ query {
 </static-query>
 
 <script>
+import SearchInput from '../components/SearchInput'
+
 export default {
+  components: {
+    SearchInput
+  },
   mounted() {
     this.theme = localStorage.getItem('theme') || 'theme-light'
+
   },
   data() {
     return {
       isOpen: false,
-      theme: 'theme-light'
+      theme: 'theme-light',
     }
   },
   methods: {
