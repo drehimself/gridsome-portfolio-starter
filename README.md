@@ -15,6 +15,7 @@ A simple portfolio starter theme for Gridsome
 - Scroll to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
 - Blog with markdown content for posts
 - Theme Switcher with Dark Mode
+- Search posts with [Fuse.js](https://fusejs.io) and [vue-fuse](https://github.com/shayneo/vue-fuse)
 - Tags for posts
 - Basic pagination
 - Syntax highlighting with [Shiki](https://shiki.matsu.io) (using [this gridsome plugin](https://gridsome.org/plugins/gridsome-plugin-remark-shiki))
@@ -35,6 +36,7 @@ A simple portfolio starter theme for Gridsome
  - Based on my [personal portfolio website](https://andremadarang.com). I wanted to create an open source version with more features.
  - Check out a [screencast I did](https://www.youtube.com/watch?v=uHo6o1TNQeE) where I go through the process of building my website.
  - Illustrations from [unDraw](https://undraw.co)
+ - Search is based on [Fuse.js](https://fusejs.io) and [vue-fuse](https://github.com/shayneo/vue-fuse). It only searches the title and summary of posts for now. Some tweaking may be necessary to get it to search to your liking. Check out the fuse documentation for search settings. A `search.json` index file is generated at build time. This happens in `gridsome.server.js`.
  - Check out these other Gridsome Starters where I got some ideas from:
     - [Gridsome Starter Blog](https://github.com/gridsome/gridsome-starter-blog)
     - [Gridsome Starter Bleda](https://github.com/cossssmin/gridsome-starter-bleda)
