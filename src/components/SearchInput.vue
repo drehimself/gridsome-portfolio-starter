@@ -61,7 +61,7 @@ export default {
     SearchFocus,
   },
   created() {
-    axios('search.json').then(response => {
+    axios('/search.json').then(response => {
       this.posts = response.data
     })
   },
