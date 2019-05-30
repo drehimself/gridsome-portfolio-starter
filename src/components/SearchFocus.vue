@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  created() {
+  mounted() {
     const component = this
     this.handler = event => {
       component.$emit('keyup', event)
