@@ -8,12 +8,14 @@
         placeholder="Search (Press  &quot;/&quot; to focus)"
         class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
         v-model="query"
-        @input="highlightedIndex = 0"
+        @input="softReset"
         @keyup="performSearch"
-        @keyup.esc="reset"
+        @keyup.esc="searchResultsVisible = false"
         @keydown.up.prevent="highlightPrev"
         @keydown.down.prevent="highlightNext"
         @keyup.enter="gotoLink"
+        @blur="searchResultsVisible = false"
+        @focus="searchResultsVisible = true"
         ref="search"
       >
       <div class="absolute top-0 ml-3" style="top:10px">
@@ -29,7 +31,7 @@
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10">
+      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10">
         <div class="flex flex-col">
           <a
             v-for="(post, index) in results"
@@ -72,6 +74,7 @@ export default {
       results: [],
       posts: [],
       highlightedIndex: 0,
+      searchResultsVisible: false,
       options: {
         shouldSort: true,
         includeMatches: true,
@@ -88,6 +91,10 @@ export default {
     reset() {
       this.query = ''
       this.highlightedIndex = 0
+    },
+    softReset() {
+      this.highlightedIndex = 0
+      this.searchResultsVisible = true
     },
     performSearch() {
       this.$search(this.query, this.posts, this.options).then(results => {
