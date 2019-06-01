@@ -31,8 +31,8 @@
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10">
-        <div class="flex flex-col">
+      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto" style="max-height: 32rem">
+        <div class="flex flex-col" ref="results">
           <a
             v-for="(post, index) in results"
             :key="index"
@@ -104,12 +104,17 @@ export default {
     highlightPrev() {
       if (this.highlightedIndex > 0) {
         this.highlightedIndex = this.highlightedIndex - 1
+        this.scrollIntoView()
       }
     },
     highlightNext() {
       if (this.highlightedIndex < this.results.length - 1) {
         this.highlightedIndex = this.highlightedIndex + 1
+        this.scrollIntoView()
       }
+    },
+    scrollIntoView() {
+      this.$refs.results.children[this.highlightedIndex].scrollIntoView({ block: 'nearest' })
     },
     gotoLink() {
       if (this.results[this.highlightedIndex]) {
