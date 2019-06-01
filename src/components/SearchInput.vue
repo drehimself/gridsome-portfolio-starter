@@ -8,6 +8,7 @@
         placeholder="Search (Press  &quot;/&quot; to focus)"
         class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
         v-model="query"
+        @input="highlightedIndex = 0"
         @keyup="performSearch"
         @keyup.esc="reset"
         @keydown.up.prevent="highlightPrev"
