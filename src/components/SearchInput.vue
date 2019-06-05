@@ -56,8 +56,8 @@
 </template>
 
 <script>
-import SearchFocus from '../components/SearchFocus'
 import axios from 'axios'
+import SearchFocus from './SearchFocus'
 
 export default {
   components: {

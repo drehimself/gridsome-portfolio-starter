@@ -5,9 +5,8 @@
 <script>
 export default {
   mounted() {
-    const component = this
     this.handler = event => {
-      component.$emit('keyup', event)
+      this.$emit('keyup', event)
     }
     window.addEventListener('keyup', this.handler)
   },
