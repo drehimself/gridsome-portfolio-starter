@@ -67,6 +67,9 @@ export default {
     axios('/search.json').then(response => {
       this.posts = response.data
     })
+    .catch(error => {
+      console.log(error);
+    })
   },
   data() {
     return {
