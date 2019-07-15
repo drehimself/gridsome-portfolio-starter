@@ -20,6 +20,6 @@
     "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
-    "tailwindcss": "^1.0.4"
+    "tailwindcss": "^1.0.5"
   }
 }
