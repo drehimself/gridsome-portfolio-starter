@@ -8,10 +8,11 @@
 const fs = require('fs');
 const path = require('path');
 const pick = require('lodash.pick');
+const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
   api.loadSource(store => {
-    // Use the Data store API here: https://gridsome.org/docs/data-store-api
+    store.addMetaData('pathPrefix', pathPrefix)
   })
 
   api.beforeBuild(({ config, store }) => {
