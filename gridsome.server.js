@@ -12,7 +12,8 @@ const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
   api.loadSource(store => {
-    store.addMetaData('pathPrefix', pathPrefix)
+    const cleanedPathPrefix = `${pathPrefix ? ['', ...pathPrefix.split('/').filter(dir=>dir.length)].join('/') : ''}`
+    store.addMetaData('pathPrefix', cleanedPathPrefix)
   })
 
   api.beforeBuild(({ config, store }) => {
