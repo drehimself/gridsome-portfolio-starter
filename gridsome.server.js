@@ -8,10 +8,40 @@
 const fs = require('fs');
 const path = require('path');
 const pick = require('lodash.pick');
+const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
   api.loadSource(store => {
-    // Use the Data store API here: https://gridsome.org/docs/data-store-api
+    /*
+    Clean the pathPrefix
+    ====================
+    not used =>  '/'
+    ''       =>  '/'
+    '/'      =>  '/'
+    '/path'  =>  '/path'
+    'path'   =>  '/path'
+    'path/'  =>  '/path'
+    '/path/' =>  '/path'
+    */
+    const cleanedPathPrefix = `${pathPrefix ? ['', ...pathPrefix.split('/').filter(dir=>dir.length)].join('/') : ''}`
+
+    /*
+    Query
+    =====
+    <static-query>        <!-- or a page-query -->
+    {
+      metaData{
+        pathPrefix
+      }
+    }
+    </static-query>
+
+    Requests for static files should look like this:
+    ===============================================
+    Using static-queries: axios( this.$static.metaData.pathPrefix + "/fileName" )
+    Using page-queries,   axios( this.$page.metaData.pathPrefix   + "/fileName" )
+    */
+    store.addMetaData('pathPrefix', cleanedPathPrefix)
   })
 
   api.beforeBuild(({ config, store }) => {
