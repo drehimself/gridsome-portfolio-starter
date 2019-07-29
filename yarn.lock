@@ -3763,10 +3763,10 @@ gridsome-plugin-remark-shiki@^0.3.0:
     shiki-languages "^0.1.0"
     unist-util-visit "^1.4.0"
 
-gridsome-plugin-rss@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-rss/-/gridsome-plugin-rss-1.1.0.tgz#de8788ae3bac32911a7717709d82c7d6151b6ecf"
-  integrity sha512-1Rx0Kx30Bs3z+Gge7Unf93UV32sU/k9j9Xzn8msiNXfH/eZ6BYK+Uw8RcC1GzfjZir2s9fbZuvkrfkhqqylc3g==
+gridsome-plugin-rss@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-rss/-/gridsome-plugin-rss-1.1.1.tgz#f93aff961b813728fc29ca341f35ed89c3081311"
+  integrity sha512-QCU4OwenptOMxyqEis141rV+8P7KHJ9Y3i4SAPoJqlWeMsUg0210lQSJzXPjo4H6jDOPGHnvGdumjv0529lRSw==
   dependencies:
     rss "^1.2.2"
 
