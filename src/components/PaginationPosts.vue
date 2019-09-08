@@ -15,7 +15,7 @@ export default {
     },
     previousPage() {
       return [0, 1].includes(this.currentPage - 1)
-        ? this.base
+        ? '/'
         : `${this.base}/${this.currentPage - 1}`;
     },
     showNextPage() {
