@@ -1,6 +1,6 @@
 ---
 title: Vue vs React Comparison
-path: vue-vs-react-comparison
+path: /vue-vs-react-comparison
 date: 2019-03-27
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 tags: ['frontend', 'vue', 'react', 'coding']
