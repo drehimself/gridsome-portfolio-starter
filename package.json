@@ -17,7 +17,7 @@
     "gridsome-plugin-rss": "^1.1.3",
     "lodash.pick": "^4.4.0",
     "vue-fuse": "^2.1.0",
-    "vue-scrollto": "^2.17.0"
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "tailwindcss": "^1.1.2"
