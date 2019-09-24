@@ -33,6 +33,9 @@
             <a v-if="$route.path === '/'" href="/#contact" v-scroll-to="'#contact'" class="text-copy-primary hover:text-gray-600">Contact</a>
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Docs</g-link>
+          </li>
           <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
@@ -129,4 +132,4 @@ export default {
 }
 </script>
 
-<style src="../main.css" />
+<style src="../css/main.css" />
