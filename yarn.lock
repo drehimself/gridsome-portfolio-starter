@@ -705,10 +705,10 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.3.3.tgz#035b2be6740823ab38aa99fdad079cedc0a93629"
-  integrity sha512-r5w3NW1xOuPTGtl/I1S/fflP+y1xTZuffvnSg59M+4BXzyH8nDIMidnpyX2kbQbNC8NexJZEmqMDi72UrU2U9Q==
+"@gridsome/transformer-remark@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.3.4.tgz#7ecf37565ffb95001ed2cf7562ff1c42ac67ecbb"
+  integrity sha512-EYDfZs1JmpIfoXYszmxmzHNcg4YxcbBSjFWPm4CHpie6CXreNOmXErO2WZ5QvLscEu/B5bsno/3mAL30roCxyw==
   dependencies:
     gray-matter "^4.0.2"
     hash-sum "^1.0.2"
