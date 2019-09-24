@@ -1,5 +1,7 @@
 /* Modified version of: https://github.com/sindresorhus/github-markdown-css */
 
+/* purgecss start ignore */
+
   .markdown-body .octicon {
     display: inline-block;
     fill: currentColor;
@@ -943,3 +945,5 @@
   .markdown-body .pl-12 {
     padding-left: 128px!important;
   }
+
+  /* purgecss end ignore */
