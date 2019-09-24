@@ -26,7 +26,6 @@ module.exports = {
         refs: {
           tags: {
             typeName: 'Tag',
-            route: 'tag/:id',
             create: true
           }
         },
@@ -66,6 +65,9 @@ module.exports = {
       }
     },
   ],
+  templates: {
+    Tag: '/tag/:id'
+  },
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
