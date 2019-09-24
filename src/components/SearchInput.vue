@@ -73,7 +73,7 @@ export default {
     SearchFocus,
   },
   created() {
-    axios(this.$static.metaData.pathPrefix + "/search.json").then(response => {
+    axios(this.$static.metadata.pathPrefix + "/search.json").then(response => {
       this.posts = response.data
     })
     .catch(error => {
