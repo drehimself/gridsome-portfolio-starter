@@ -19,8 +19,6 @@ Here is another component from `~/components/TransitionComponent.vue`:
 
 The ability to use Vue Components in Markdown was added in Gridsome v0.7 with the [vue-remark](https://gridsome.org/plugins/@gridsome/vue-remark) plugin.
 
-I'm still having trouble getting syntax highlighting to work in a Vue Remark type (Documentation, in this case).
-
 ```js
 <template>
   <Layout>
@@ -33,8 +31,9 @@ I'm still having trouble getting syntax highlighting to work in a Vue Remark typ
 </template>
 ```
 
-It works fine in [blog posts](/introduction-to-gridsome) (I'm using [this gridsome plugin for Shiki](https://gridsome.org/plugins/gridsome-plugin-remark-shiki)).
-
-If you're reading this and you have it working, please [let me know](https://twitter.com/drehimself). Even better, [send me a PR on GitHub](https://github.com/drehimself/gridsome-portfolio-starter).
-
-I haven't tried the [remark plugins](https://github.com/remarkjs/remark/blob/master/doc/plugins.md#list-of-plugins) but ideally, I'd like the syntax highlighting to work with the plugin I'm already using for Gridsome.
+```css
+.test {
+  background: white;
+  color: red;
+}
+```
