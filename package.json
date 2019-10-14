@@ -17,7 +17,7 @@
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.2.0",
     "lodash.pick": "^4.4.0",
-    "vue-fuse": "^2.1.0",
+    "vue-fuse": "^2.1.2",
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
