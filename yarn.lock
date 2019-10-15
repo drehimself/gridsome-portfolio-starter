@@ -3796,7 +3796,7 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-fuse.js@^3.2.0:
+fuse.js@^3.4.5:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.4.5.tgz#8954fb43f9729bd5dbcb8c08f251db552595a7a6"
   integrity sha512-s9PGTaQIkT69HaeoTVjwGsLfb8V8ScJLx5XGFcKHg0MqLUH/UZ4EKOtqtXX9k7AFqCGxD1aJmYb8Q5VYDibVRQ==
@@ -9073,12 +9073,12 @@ vm-browserify@^1.0.1:
   version "4.0.1"
   resolved "https://github.com/octref/vscode-textmate#e65aabe2227febda7beaad31dd0fca1228c5ddf3"
 
-vue-fuse@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/vue-fuse/-/vue-fuse-2.1.0.tgz#a8e785cbb80d216d99cf652f32d3cdad243a15df"
-  integrity sha512-hx4QZkeIATmFlKyq6QSWcFFHPJC0vmsusnZP1GkBSEXh1eH7WV8Pde9O0XFvXWIzCH4Dr+Dox25EKu+iAy4bSg==
+vue-fuse@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vue-fuse/-/vue-fuse-2.1.2.tgz#9c369b9349f72adbd2aab2c36e3ee4dc55af522f"
+  integrity sha512-mTGawEw4QK+kVwaLUR4cV0CYEyrHzIKa8RrLtxCovoRWknllhu/eo1yWAJ5Ix0xQJxk/glMKnE/Z73gyTU1CiA==
   dependencies:
-    fuse.js "^3.2.0"
+    fuse.js "^3.4.5"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
