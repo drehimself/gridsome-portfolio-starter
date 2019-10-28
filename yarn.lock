@@ -789,7 +789,7 @@
     micromatch "^3.1.10"
     sitemap "^2.1.0"
 
-"@gridsome/source-filesystem@^0.6.1", "@gridsome/source-filesystem@^0.6.2":
+"@gridsome/source-filesystem@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.6.2.tgz#95f65e9fcf03624ba23f8f0bee0779fe8e8b9021"
   integrity sha512-K1pyXwFYIlABaHq3wqOPyYt4ARzLZuUQ+UZKjDSBT9I0T0qpCbwir5kJMQkR7qY4ONflUrv8fgG6DNSrc1uzbA==
@@ -4075,10 +4075,10 @@ gridsome-plugin-rss@^1.2.0:
   dependencies:
     rss "^1.2.2"
 
-gridsome@^0.7.8:
-  version "0.7.8"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.8.tgz#21ca3684d00f2e9e44ce8bba2d4ae5d1a7797778"
-  integrity sha512-ksUtNREvpL+2Yn8ctxcNMIjkDOp+vJ8UwM15JtqvqUCAgdiHTZXwtC2sr/aZKDNVjACi2dmg1ThAs5NEftsThQ==
+gridsome@^0.7.9:
+  version "0.7.9"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.9.tgz#f33ec371d9d1ce5b38d375d5c7ecf5e9c22338e2"
+  integrity sha512-IEVVS3LiUHiFZU0g2RyveF9EDMFQMNK5bxFZHfyrtI5GHJxakmqbG0cQ+7WCJ5V92Q/2KYXXqs41SC5KphcsEw==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"
