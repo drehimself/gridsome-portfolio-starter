@@ -780,10 +780,10 @@
     sort-package-json "^1.15.0"
     update-notifier "^3.0.1"
 
-"@gridsome/plugin-sitemap@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.2.2.tgz#3727db503dbe4125a4db7dcb0b65f602b13786e6"
-  integrity sha512-PA8BzdNruSkWPgpW/F5xGCBTQbjk5GOX3dmH2eWeoYmyGPx46vGOPXNScgLHdAR4ragwlwVUi4kEPGl2MfA8nA==
+"@gridsome/plugin-sitemap@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.2.3.tgz#44c2655d97349f8a02a76a38452313442b6cdab5"
+  integrity sha512-7XtE8SSZrYmM7/lf91giF44rHSBKfaMNr+QcZ/Ctq9WIC7ga3YWiA7COshX6sBJK8okhP6djx82QbKnX8c8IYQ==
   dependencies:
     fs-extra "^7.0.0"
     micromatch "^3.1.10"
@@ -801,10 +801,10 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.3.4.tgz#7ecf37565ffb95001ed2cf7562ff1c42ac67ecbb"
-  integrity sha512-EYDfZs1JmpIfoXYszmxmzHNcg4YxcbBSjFWPm4CHpie6CXreNOmXErO2WZ5QvLscEu/B5bsno/3mAL30roCxyw==
+"@gridsome/transformer-remark@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.4.0.tgz#7b03481e6be5064984fcacc6832693c766745a4d"
+  integrity sha512-rGtZisA0FYg0oaruT50YYtpPLgZobpnRLiH8BYTtT3PGMPIdC618emuRxfY9U3zXCUX2N4uO1JcZzcPVOmClxg==
   dependencies:
     gray-matter "^4.0.2"
     hash-sum "^1.0.2"
@@ -824,17 +824,17 @@
     unist-util-visit "^1.4.0"
     vfile "^4.0.0"
 
-"@gridsome/vue-remark@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.1.7.tgz#24ae900e54f2f2e3c472446ac29eb88816fcd196"
-  integrity sha512-QFXcgsC1bHz/fq8CUspHztdoedeDZ2nERr//L4AI2O663/QynIk6senFct6VQghCfnd+w1GK4Jv8sHKLy1DQ1g==
+"@gridsome/vue-remark@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.1.9.tgz#48978a1aa171de014ad491290ca8369e112a2328"
+  integrity sha512-hedjjlVykgAt2lli07TZfFKSxqY3ZrxUilIIJh9gcq6auZ5jscMPhsYKCRsWeDbTzeNkscsF5lloig/XcVH+cQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@gridsome/source-filesystem" "^0.6.2"
-    "@gridsome/transformer-remark" "^0.3.4"
+    "@gridsome/transformer-remark" "^0.4.0"
     hash-sum "^1.0.2"
     hast-util-to-html "^5.0.0"
     he "^1.2.0"
