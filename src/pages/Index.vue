@@ -97,7 +97,7 @@
                           Full Name
                       </label>
 
-                      <input type="text" name="name" id="name" placeholder="First Last" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="text" name="name" id="name" placeholder="First Last" class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-indigo-500 mb-2 p-4" required>
                   </div>
 
                   <div class="w-full px-4 md:w-1/2">
@@ -105,7 +105,7 @@
                           Email Address
                       </label>
 
-                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4" required>
+                      <input type="email" name="email" id="email" placeholder="email@example.com"  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-indigo-500 mb-2 p-4" required>
                   </div>
               </div>
 
@@ -131,7 +131,7 @@
         <h2 class="text-2xl font-bold mb-8">Join our Newsletter</h2>
 
         <div class="w-4/5 mx-auto mb-8">
-          <p class="mb-8 text-lg sm:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, voluptatum. Quam, deleniti nulla.</p>
+          <p class="mb-8 text-lg sm:text-xl">We'll send you updates and articles to help move your business forward.</p>
 
           <form action="#">
             <div class="flex flex-col sm:flex-row">
