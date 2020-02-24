@@ -824,17 +824,40 @@
     unist-util-visit "^1.4.0"
     vfile "^4.0.0"
 
-"@gridsome/vue-remark@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.1.9.tgz#48978a1aa171de014ad491290ca8369e112a2328"
-  integrity sha512-hedjjlVykgAt2lli07TZfFKSxqY3ZrxUilIIJh9gcq6auZ5jscMPhsYKCRsWeDbTzeNkscsF5lloig/XcVH+cQ==
+"@gridsome/transformer-remark@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.5.0.tgz#e872e91edc316205c507533395b8f1bc985185a1"
+  integrity sha512-uTVkc4BbQIuo9KzA4nchHhADHznLLyMXCTwSZ238xG2f5QWcsLtQRuPnKBID0nFx+9U6nvRE5YoC4FF2DBDU2A==
+  dependencies:
+    gray-matter "^4.0.2"
+    hash-sum "^1.0.2"
+    hast-util-to-html "^4.0.1"
+    html-to-text "^4.0.0"
+    lodash "^4.17.11"
+    lru-cache "^5.1.1"
+    remark-autolink-headings "^5.0.0"
+    remark-external-links "^3.0.0"
+    remark-fix-guillemets "^1.0.15"
+    remark-html "^8.0.0"
+    remark-parse "^6.0.0"
+    remark-slug "^4.2.3"
+    remark-squeeze-paragraphs "^3.0.2"
+    sanitize-html "^1.20.0"
+    unified "^7.0.0"
+    unist-util-visit "^1.4.0"
+    vfile "^4.0.0"
+
+"@gridsome/vue-remark@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@gridsome/vue-remark/-/vue-remark-0.1.10.tgz#2c0715ea42bc3fb057cdaf970d708cb5bd8a884c"
+  integrity sha512-LcXz/QaWF5UHXW7ZvpQ1QKw2KYcOvNkzWIGZAn9ntqK6kUjNetmLY0Urt1YWmKeMrdZBSFx58EktlC4vPoQJQw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@gridsome/source-filesystem" "^0.6.2"
-    "@gridsome/transformer-remark" "^0.4.0"
+    "@gridsome/transformer-remark" "^0.5.0"
     hash-sum "^1.0.2"
     hast-util-to-html "^5.0.0"
     he "^1.2.0"
