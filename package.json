@@ -13,7 +13,7 @@
     "@gridsome/transformer-remark": "^0.4.0",
     "@gridsome/vue-remark": "^0.1.9",
     "axios": "^0.19.2",
-    "gridsome": "^0.7.12",
+    "gridsome": "^0.7.14",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
     "lodash.pick": "^4.4.0",
