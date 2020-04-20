@@ -11,7 +11,7 @@ A simple portfolio starter theme for Gridsome
 ## Features
 
 - Clean and minimal design
-- [Tailwind CSS v1](https://tailwindcss.com) (with PurgeCSS)
+- [Tailwind CSS v1](https://tailwindcss.com) (with PurgeCSS). Using [this gridsome plugin](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) as it combines Tailwind and PurgeCSS.
 - Scroll to sections using [vue-scrollto](https://github.com/rigor789/vue-scrollto)
 - Blog with markdown content for posts
 - Documentation type that shows how to use Vue components in Markdown (click Docs)
