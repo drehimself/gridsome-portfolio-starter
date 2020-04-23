@@ -31,20 +31,20 @@
           <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
         </div>
 
-        <ul class="text-lg sm:text-xl">
-          <li class="checkmark mb-6">
+        <ul class="text-lg sm:text-xl space-y-6">
+          <li class="checkmark">
             <div>Project One</div>
             <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
           </li>
-          <li class="checkmark mb-6">
+          <li class="checkmark">
             <div>Project Two</div>
             <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
           </li>
-          <li class="checkmark mb-6">
+          <li class="checkmark">
             <div>Project Three</div>
             <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
           </li>
-          <li class="checkmark mb-6">
+          <li class="checkmark">
             <div>Project Four</div>
             <div class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam animi iure nemo exercitationem a, eius non culpa itaque!</div>
           </li>

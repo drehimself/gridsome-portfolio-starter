@@ -54,6 +54,10 @@
     color: #cbd5e0;
 }
 
+.theme-dark nav .active {
+    @apply border-white border-b;
+}
+
 .content-wrapper {
   transition: background-color .25s;
 }
