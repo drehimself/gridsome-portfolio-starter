@@ -12,6 +12,4 @@ listingImageAlt: 'app'
 sortOrder: 1
 ---
 
-Unsure at the moment if I want to do case studies like this, or as html files, or if I want to use Vue components for different sections instead.
-
-e.g.  component for hero, component for brief, component for audience etc
+To to: Add styles and vue templates
