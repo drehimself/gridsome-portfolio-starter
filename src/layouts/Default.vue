@@ -173,11 +173,13 @@ query {
 import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import Footer from "~/components/Footer";
+// import Header from "~/components/Header";
 
 export default {
   components: {
     SearchInput,
     ThemeSwitcher,
+    // Header,
     Footer
   },
   mounted() {
