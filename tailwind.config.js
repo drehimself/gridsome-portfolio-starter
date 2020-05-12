@@ -35,16 +35,16 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      green: {
-        100: '#f0fff4',
-        200: '#c6f6d5',
-        300: '#9ae6b4',
-        400: '#68d391',
-        500: '#48bb78',
-        600: '#38a169',
-        700: '#2f855a',
-        800: '#276749',
-        900: '#22543d',
+      blue: {
+        100: '#ebf8ff',
+        200: '#bee3f8',
+        300: '#90cdf4',
+        400: '#63b3ed',
+        500: '#4299e1',
+        600: '#3182ce',
+        700: '#2b6cb0',
+        800: '#2c5282',
+        900: '#2a4365',
       },
 
       gray: {
@@ -61,6 +61,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Metropolis',
         'Nunito Sans',
         'Roboto',
         '-apple-system',
@@ -75,6 +76,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
+      display: ['Titillium Web', 'sans-serif'],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'Menlo',
@@ -85,6 +87,12 @@ module.exports = {
         'monospace',
       ],
     },
+    lineHeight: {
+      none: '1',
+      tight: '1.1',
+      snug: '1.375',
+      normal: '1.65',
+    }
   },
   variants: {
     // Some useful comment
