@@ -1,6 +1,15 @@
 ---
+projectName: 'Test Project'
+
 title: Vue Components in Markdown
+role: 'Writer'
 excerpt: An example markdown page that has Vue Components inside of it!
+year: 2020
+
+slug: 'test'
+listingImage: 'http://placekitten.com/g/300/150'
+listingImageAlt: 'alt text here'
+sortOrder: 2
 ---
 import TestComponent from '~/components/CounterComponent.vue'
 import TransitionComponent from '~/components/TransitionComponent.vue'
