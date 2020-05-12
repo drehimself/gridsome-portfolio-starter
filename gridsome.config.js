@@ -40,15 +40,27 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Documentation', // Required
-        baseDir: './docs', // Where .md files are located
-        pathPrefix: '/docs', // Add route prefix. Optional
-        template: './src/templates/Documentation.vue', // Optional
+        typeName: 'Project', // Required
+        baseDir: './projects', // Where .md files are located
+        pathPrefix: '/my-work', // Add route prefix. Optional
+        template: './src/templates/Project.vue', // Optional
         plugins: [
           [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
       ],
       }
     },
+    // {
+    //   use: '@gridsome/vue-remark',
+    //   options: {
+    //     typeName: 'Documentation', // Required
+    //     baseDir: './docs', // Where .md files are located
+    //     pathPrefix: '/docs', // Add route prefix. Optional
+    //     template: './src/templates/Documentation.vue', // Optional
+    //     plugins: [
+    //       [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+    //   ],
+    //   }
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {

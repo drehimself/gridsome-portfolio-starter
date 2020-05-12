@@ -65,7 +65,7 @@
             <g-link v-else to="/#contact" class="text-copy-primary hover:text-gray-600">Contact</g-link>
           </li>
           <li>
-            <g-link to="/docs" class="text-copy-primary hover:text-gray-600">Docs</g-link>
+            <g-link to="/projects" class="text-copy-primary hover:text-gray-600">Work List</g-link>
           </li>
           <li>
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
