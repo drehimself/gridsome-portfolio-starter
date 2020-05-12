@@ -1,5 +1,10 @@
 @tailwind base;
 
+
+/* ------------------------------------ 
+ * FONTS
+------------------------------------ */
+
 /* latin-ext */
 @font-face {
   font-family: 'Titillium';
@@ -41,6 +46,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @tailwind utilities;
 
+
+/* ------------------------------------ 
+ * THEME
+------------------------------------ */
 .theme-light {
   --bg-background-primary: transparent;
   --bg-background-secondary: #F0FAFF; /* #f7fafc */
@@ -99,18 +108,33 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color .25s;
 }
 
-a {
+/* ------------------------------------ 
+ * Base
+------------------------------------ */
+
+.link {
   @apply text-blue-700 font-bold;
 }
 
-a:hover {
+.link:hover {
   @apply text-blue-800;
 }
+
+
+/* ------------------------------------ 
+ * Nav
+------------------------------------ */
 
 nav .active {
   font-weight: bold;
   @apply border-black border-b;
 }
+
+
+
+/* ------------------------------------ 
+ * Layout
+------------------------------------ */
 
 .container-inner {
   padding-left: 1rem;
@@ -135,6 +159,7 @@ nav .active {
   }
 }
 
+/* TEMP */
 .checkmark {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2229%22%20height%3D%2229%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4.427%2024.93A14.5%2014.5%200%201%201%2024.93%204.427c5.495%205.69%205.416%2014.733-.177%2020.326s-14.637%205.672-20.326.177z%22%20fill%3D%22%232E855A%22/%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M10.234%2012.803l3.67%203.253L20.766%2010%2023%2012l-9.096%208L8%2014.789l2.234-2z%22/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -154,4 +179,39 @@ nav .active {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* ------------------------------------ 
+ * Accessibility
+------------------------------------ */
+.sr-only {
+  position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+
+/* ------------------------------------ 
+ * Icons
+------------------------------------ */
+
+.icon-wrap, 
+.icon-wrap svg {
+  height: 1em;
+  width: 1em;
+}
+
+.icon-wrap--inline {
+  display: inline-block;
+  margin-bottom: -0.125em;
+}
+
+.icon-wrap--inline,
+.icon-wrap--inline svg {
+  width: 1.25em;
 }
