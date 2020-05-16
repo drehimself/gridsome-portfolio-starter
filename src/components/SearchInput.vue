@@ -57,34 +57,66 @@
 
 
 <static-query>
-  {
-    metadata{
-      pathPrefix
+query Search {
+  allPost {
+    edges {
+      node {
+        id
+        path
+        title
+        summary
+        headings {
+          depth
+          value
+          anchor
+        }
+      }
     }
   }
+  allDocumentation {
+    edges {
+      node {
+        id
+        path
+        title
+      }
+    }
+  }
+}
 </static-query>
 
 <script>
-import axios from 'axios'
 import SearchFocus from './SearchFocus'
 
 export default {
   components: {
     SearchFocus,
   },
-  created() {
-    axios(this.$static.metadata.pathPrefix + "/search.json").then(response => {
-      this.posts = response.data
-    })
-    .catch(error => {
-      console.log(error);
-    })
+  computed: {
+    pages () {
+      let result = [];
+      const allPost = this.$static.allPost.edges.map(edge => edge.node);
+      allPost.forEach(page => {
+        result.push({
+          path: page.path,
+          title: page.title,
+          summary: page.summary
+        });
+      });
+      const allDocs = this.$static.allDocumentation.edges.map(edge => edge.node);
+      allDocs.forEach(page => {
+        result.push({
+          path: page.path,
+          title: page.title
+        });
+      });
+      return result;
+    }
   },
   data() {
     return {
       query: '',
       results: [],
-      posts: [],
       highlightedIndex: 0,
       searchResultsVisible: false,
       options: {
@@ -109,7 +141,7 @@ export default {
       this.searchResultsVisible = true
     },
     performSearch() {
-      this.$search(this.query, this.posts, this.options).then(results => {
+      this.$search(this.query, this.pages, this.options).then(results => {
         this.results = results
       })
     },
