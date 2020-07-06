@@ -855,10 +855,10 @@
     sort-package-json "^1.15.0"
     update-notifier "^4.1.0"
 
-"@gridsome/plugin-sitemap@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.3.0.tgz#2ab1a0c0bc73ab4d7724fbedf4994daaf77c99b5"
-  integrity sha512-T7Av4kHOUJW0wynuQTY6sL6pk4NT2sZ34zarDaMF+spr+iqXDrXJsyhOd3+d4C/EfmoP+K2DizQRRR1efACaPA==
+"@gridsome/plugin-sitemap@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.4.0.tgz#dbd51c747cb8d6d9c827104c832e35a5aa4807af"
+  integrity sha512-fAwC/7+jCM6uTx7m7cEHBeoZOuxkuXy9LCDS65VUiSMgelmMjQBcrsCBFWULaE65sl/wPB6eGRmCIG+d38L6Qw==
   dependencies:
     fs-extra "^7.0.0"
     micromatch "^3.1.10"
