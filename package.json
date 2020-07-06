@@ -12,7 +12,7 @@
     "@gridsome/transformer-remark": "^0.6.1",
     "@gridsome/vue-remark": "^0.2.2",
     "axios": "^0.19.2",
-    "gridsome": "^0.7.17",
+    "gridsome": "^0.7.18",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
     "vue-fuse": "^2.2.1",
