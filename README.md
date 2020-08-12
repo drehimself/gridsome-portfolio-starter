@@ -42,3 +42,8 @@ A simple portfolio starter theme for Gridsome
     - [Gridsome Starter Blog](https://github.com/gridsome/gridsome-starter-blog)
     - [Gridsome Starter Bleda](https://github.com/cossssmin/gridsome-starter-bleda)
     - [Jigsaw Starter Blog](https://jigsaw.tighten.co/docs/starter-templates/) - I got a lot of design inspiration from this starter theme.
+
+## Other versions
+
+- Nuxt version: [https://github.com/drehimself/nuxt-portfolio-starter](https://github.com/drehimself/nuxt-portfolio-starter)
+- Saber version: [https://github.com/drehimself/saber-portfolio-starter](https://github.com/drehimself/saber-portfolio-starter)
