@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "test": "./node_modules/.bin/cypress open"
   },
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.4.0",
@@ -19,6 +20,7 @@
     "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
+    "cypress": "^4.12.1",
     "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }

@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-between text-xl items-center">
-    <g-link :to="previousPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showPreviousPage }">&larr; Prev</g-link>
+    <g-link :to="previousPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showPreviousPage }" data-cypress="prev">&larr; Prev</g-link>
     <div class="text-base">Page {{ currentPage }} of {{ totalPages }}</div>
-    <g-link :to="nextPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showNextPage }">Next &rarr;</g-link>
+    <g-link :to="nextPage" :class="{ 'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showNextPage }" data-cypress="next">Next &rarr;</g-link>
   </div>
 </template>
 

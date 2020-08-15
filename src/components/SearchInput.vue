@@ -17,6 +17,7 @@
         @blur="searchResultsVisible = false"
         @focus="searchResultsVisible = true"
         ref="search"
+        data-cypress="search"
       >
       <div class="absolute top-0 ml-3" style="top:10px">
         <svg fill="currentColor" class="text-gray-500 h-5 w-5" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path></svg>
@@ -31,7 +32,7 @@
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto" style="max-height: 32rem">
+      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto" style="max-height: 32rem" data-cypress="search-results">
         <div class="flex flex-col" ref="results">
           <a
             v-for="(post, index) in results"
