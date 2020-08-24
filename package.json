@@ -11,7 +11,7 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.1",
-    "@gridsome/vue-remark": "^0.2.2",
+    "@gridsome/vue-remark": "^0.2.3",
     "axios": "^0.19.2",
     "gridsome": "^0.7.19",
     "gridsome-plugin-remark-shiki": "^0.3.1",
