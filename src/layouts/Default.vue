@@ -44,9 +44,10 @@
       </nav>
     </header>
 
-    <div class="flex-grow">
+    <main class="flex-grow">
       <slot/>
-    </div>
+    </main>
+
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">

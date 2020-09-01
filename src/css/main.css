@@ -62,6 +62,11 @@
   transition: background-color .25s;
 }
 
+.content-wrapper > header,
+.content-wrapper > main {
+  background-color: var(--bg-background-primary);
+}
+
 a {
   @apply text-green-700 font-bold;
 }
