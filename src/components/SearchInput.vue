@@ -4,10 +4,12 @@
 
     <div class="relative w-80">
       <input
-        type="text"
-        placeholder="Search (Press  &quot;/&quot; to focus)"
-        class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
+        ref="search"
         v-model="query"
+        type="text"
+        placeholder='Search (Press  "/" to focus)'
+        class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
+        data-cypress="search"
         @input="softReset"
         @keyup="performSearch"
         @keyup.esc="searchResultsVisible = false"
@@ -16,46 +18,67 @@
         @keyup.enter="gotoLink"
         @blur="searchResultsVisible = false"
         @focus="searchResultsVisible = true"
-        ref="search"
-        data-cypress="search"
-      >
-      <div class="absolute top-0 ml-3" style="top:10px">
-        <svg fill="currentColor" class="text-gray-500 h-5 w-5" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path></svg>
+      />
+      <div class="absolute top-0 ml-3" style="top: 10px">
+        <svg
+          fill="currentColor"
+          class="text-gray-500 h-5 w-5"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            class="heroicon-ui"
+            d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+          ></path>
+        </svg>
       </div>
       <div
         v-if="query.length > 0"
         class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-gray-600 hover:text-gray-800"
-        style="top:2px;"
+        style="top: 2px"
         @click="reset"
       >
         &times;
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto" style="max-height: 32rem" data-cypress="search-results">
-        <div class="flex flex-col" ref="results">
+      <div
+        v-if="query.length > 0 && searchResultsVisible"
+        class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto"
+        style="max-height: 32rem"
+        data-cypress="search-results"
+      >
+        <div ref="results" class="flex flex-col">
           <a
             v-for="(post, index) in results"
             :key="index"
             :href="post.item.path"
-            @click="reset"
             class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
-            :class="{ 'search-highlighted' : index === highlightedIndex }"
+            :class="{ 'search-highlighted': index === highlightedIndex }"
+            @click="reset"
           >
             {{ post.item.title }}
 
-            <span class="block font-normal text-copy-primary text-sm my-1">{{ post.item.summary }}</span>
+            <span class="block font-normal text-copy-primary text-sm my-1">{{
+              post.item.summary
+            }}</span>
           </a>
 
-          <div v-if="results.length === 0" class="bg-background-form font-normal w-full border-b cursor-pointer p-4">
-            <p class="my-0">No results for '<strong>{{ query }}</strong>'</p>
+          <div
+            v-if="results.length === 0"
+            class="bg-background-form font-normal w-full border-b cursor-pointer p-4"
+          >
+            <p class="my-0">
+              No results for '<strong>{{ query }}</strong
+              >'
+            </p>
           </div>
         </div>
       </div>
     </transition>
   </div>
 </template>
-
 
 <static-query>
 query Search {
@@ -87,36 +110,15 @@ query Search {
 </static-query>
 
 <script>
-import SearchFocus from './SearchFocus'
+import SearchFocus from "./SearchFocus";
 
 export default {
   components: {
     SearchFocus,
   },
-  computed: {
-    pages () {
-      let result = [];
-      const allPost = this.$static.allPost.edges.map(edge => edge.node);
-      allPost.forEach(page => {
-        result.push({
-          path: page.path,
-          title: page.title,
-          summary: page.summary
-        });
-      });
-      const allDocs = this.$static.allDocumentation.edges.map(edge => edge.node);
-      allDocs.forEach(page => {
-        result.push({
-          path: page.path,
-          title: page.title
-        });
-      });
-      return result;
-    }
-  },
   data() {
     return {
-      query: '',
+      query: "",
       results: [],
       highlightedIndex: 0,
       searchResultsVisible: false,
@@ -128,59 +130,85 @@ export default {
         distance: 500,
         maxPatternLength: 32,
         minMatchCharLength: 1,
-        keys: ['title', 'summary']
-      }
-    }
+        keys: ["title", "summary"],
+      },
+    };
+  },
+  computed: {
+    pages() {
+      let result = [];
+      const allPost = this.$static.allPost.edges.map((edge) => edge.node);
+      allPost.forEach((page) => {
+        result.push({
+          path: page.path,
+          title: page.title,
+          summary: page.summary,
+        });
+      });
+      const allDocs = this.$static.allDocumentation.edges.map(
+        (edge) => edge.node
+      );
+      allDocs.forEach((page) => {
+        result.push({
+          path: page.path,
+          title: page.title,
+        });
+      });
+      return result;
+    },
   },
   methods: {
     reset() {
-      this.query = ''
-      this.highlightedIndex = 0
+      this.query = "";
+      this.highlightedIndex = 0;
     },
     softReset() {
-      this.highlightedIndex = 0
-      this.searchResultsVisible = true
+      this.highlightedIndex = 0;
+      this.searchResultsVisible = true;
     },
     performSearch() {
-      this.$search(this.query, this.pages, this.options).then(results => {
-        this.results = results
-      })
+      this.$search(this.query, this.pages, this.options).then((results) => {
+        this.results = results;
+      });
     },
     highlightPrev() {
       if (this.highlightedIndex > 0) {
-        this.highlightedIndex = this.highlightedIndex - 1
-        this.scrollIntoView()
+        this.highlightedIndex = this.highlightedIndex - 1;
+        this.scrollIntoView();
       }
     },
     highlightNext() {
       if (this.highlightedIndex < this.results.length - 1) {
-        this.highlightedIndex = this.highlightedIndex + 1
-        this.scrollIntoView()
+        this.highlightedIndex = this.highlightedIndex + 1;
+        this.scrollIntoView();
       }
     },
     scrollIntoView() {
-      this.$refs.results.children[this.highlightedIndex].scrollIntoView({ block: 'nearest' })
+      this.$refs.results.children[this.highlightedIndex].scrollIntoView({
+        block: "nearest",
+      });
     },
     gotoLink() {
       if (this.results[this.highlightedIndex]) {
-        window.location = this.results[this.highlightedIndex].item.path
+        window.location = this.results[this.highlightedIndex].item.path;
       }
     },
     focusSearch(e) {
-      if (e.key === '/') {
-        this.$refs.search.focus()
+      if (e.key === "/") {
+        this.$refs.search.focus();
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity .2s;
-  }
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
-  }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
-
