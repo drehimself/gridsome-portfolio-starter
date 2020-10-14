@@ -7,8 +7,9 @@
       <nav
         class="container mx-auto flex flex-wrap justify-between items-center py-8"
       >
-        <div class="uppercase tracking-wide font-bold text-3xl">
-          <g-link to="/">ubtb</g-link>
+        <div class="tracking-wide">
+          <g-link class="uppercase text-3xl font-bold" to="/">ubtb</g-link>
+          <span class="font-normal text-xs ml-1 align-bottom">by Kassym Dorsel</span>
         </div>
         <div class="block lg:hidden">
           <button

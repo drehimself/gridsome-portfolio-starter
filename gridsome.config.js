@@ -4,11 +4,13 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+let siteurl = "https://ubtb.com/";
+
 module.exports = {
-  siteName: "Gridsome Portfolio Starter",
+  siteName: "Unofficial Beckhoff and TwinCAT Blog",
   siteDescription:
-    "A simple portfolio theme for Gridsome powered by Tailwind CSS v1",
-  siteUrl: "https://gridsome-portfolio-starter.netlify.com",
+    "My personal blog about beckhoff and twincat discoveries",
+  siteUrl: siteurl,
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -46,15 +48,15 @@ module.exports = {
       options: {
         contentTypeName: "Post",
         feedOptions: {
-          title: "Gridsome Portfolio Starter Blog",
-          feed_url: "https://gridsome-portfolio-starter.netlify.com/rss.xml",
-          site_url: "https://gridsome-portfolio-starter.netlify.com/",
+          title: "My personal blog about Beckhoff and TwinCAT musings",
+          feed_url: siteurl + "rss.xml",
+          site_url: siteurl,
         },
         feedItemOptions: (node) => ({
           title: node.title,
           description: node.summary,
-          url: "https://gridsome-portfolio-starter.netlify.com" + node.path,
-          author: "Andre Madarang",
+          url: siteurl + node.path,
+          author: "Kassym Dorsel",
           date: node.date,
         }),
         output: {
