@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div
-      class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16"
+      class="hero container mx-auto flex flex-col sm:flex-row justify-between py-16"
     >
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">Unofficial Beckhoff and TwinCAT Blog</div>
@@ -19,7 +19,7 @@
     </div>
     <!-- end hero -->
 
-    <div class="container-inner mx-auto">
+    <div class="container mx-auto">
       <p class="text-lg sm:text-xl">
         This is my personal blog for all things related to Beckhoff, TwinCAT,
         IoT, Data Aggregation, Data Visualization and any other technologies.
@@ -27,7 +27,7 @@
 
       <div class="overflow-x-hidden">
         <div
-          class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+          class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
         >
           <h2 id="projects" class="font-bold mb-6">Most recent blog posts:</h2>
 
@@ -113,7 +113,7 @@
 
       <div class="overflow-x-hidden">
         <div class="contact-me bg-background-secondary pt-16">
-          <div class="container-inner mx-auto text-xl pb-4 relative">
+          <div class="container mx-auto text-xl pb-4 relative">
             <h2 id="contact" class="font-bold mb-6">Contact me:</h2>
 
             <div
@@ -188,7 +188,7 @@
         <!-- end contact-me -->
       </div>
 
-      <div class="container-inner mx-auto -mt-32 pb-4 overflow-x-hidden">
+      <div class="container mx-auto -mt-32 pb-4 overflow-x-hidden">
         <svg width="725" height="166" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <g opacity=".515">
