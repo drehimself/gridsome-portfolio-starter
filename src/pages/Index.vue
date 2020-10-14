@@ -11,7 +11,7 @@
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image
-          src="../../static/developer.svg"
+          src="../../static/twincat3.jpg"
           alt="hero"
           class="mx-auto sm:mx-0"
         />
@@ -97,14 +97,21 @@
               />
             </div>
             <div class="flex-1 text-lg sm:text-xl ml-6">
-              Young dedicated engineer in industrial machine design and
-              automation. I enjoy challenging the the status quo and always
-              looking at more efficient, easier, and cheaper ways of designing
-              electrical and automation projects. I believe industrial
-              automation has some catching up to do towards current software
-              best practices. I strive to use these principles and push the
-              limit of what can be done. I closely follow new technology trends
-              and offerings in the sector and implement them in my projects.
+              <p>
+                Young dedicated engineer in industrial machine design and
+                automation. I enjoy challenging the the status quo and always
+                looking at more efficient, easier, and cheaper ways of designing
+                electrical and automation projects. I believe industrial
+                automation has some catching up to do towards current software
+                best practices. I strive to use these principles and push the
+                limit of what can be done. I closely follow new technology
+                trends and offerings in the sector and implement them in my
+                projects.
+              </p>
+              <p class="mt-6">
+                Get in touch with me with any Beckhoff or TwinCAT 3 questions.
+                It might turn into a blog post.
+              </p>
             </div>
           </div>
         </div>
@@ -112,8 +119,8 @@
       </div>
 
       <div class="overflow-x-hidden">
-        <div class="contact-me bg-background-secondary pt-16">
-          <div class="container mx-auto text-xl pb-4 relative">
+        <div class="contact-me bg-background-secondary pt-6">
+          <div class="container mx-auto text-xl pb-1 relative">
             <h2 id="contact" class="font-bold mb-6">Contact me:</h2>
 
             <div
@@ -174,7 +181,7 @@
                   ></textarea>
                 </div>
 
-                <div class="flex justify-end w-full">
+                <div class="flex justify-center w-full">
                   <input
                     type="submit"
                     value="Submit"

@@ -3,7 +3,7 @@ title: TwinCAT Vision Part 1
 path: /twincat-vision-part-1
 date: 2020-10-08
 summary: First steps into Beckhoff's newly released TC3 Vision. Setting up basic metrology using the provided convulated functions and simplifying them using custom structs and functions.
-tags: ['beckhoff', 'twincat', 'vision', 'function', 'struct', 'dry', 'function block']
+tags: ['beckhoff', 'twincat', 'vision', 'function', 'struct', 'dry', 'fb', 'software']
 ---
 
 ![background](./images/twincat-vision.jpg)
