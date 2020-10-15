@@ -18,24 +18,22 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
-      <script>
+      <script type="application/javascript">
         talkyardServerUrl =
           "https://comments-for-kassymdorsel-com.talkyard.net";
       </script>
       <script
-        async
-        defer
+        type="application/javascript"
         src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"
       ></script>
       <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-      <div
-        class="talkyard-comments"
-        data-discussion-id=""
-        style="margin-top: 45px"
-      >
+      <div class="talkyard-comments" style="margin-top: 45px">
         <noscript>Please enable Javascript to view comments.</noscript>
-        <p style="margin-top: 25px; opacity: 0.9; font-size: 96%">
-          Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.
+        <p class="mt-5 text-sm">
+          Comments powered by
+          <a target="_blank" rel="noopener" href="https://www.talkyard.io"
+            >Talkyard</a
+          >.
         </p>
       </div>
     </div>
