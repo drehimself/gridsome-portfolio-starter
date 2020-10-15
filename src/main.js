@@ -20,7 +20,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(
     VueGtag,
     {
-      config: { id: process.env.UA },
+      config: { id: process.env.GRIDSOME_UA },
     },
     router
   );
