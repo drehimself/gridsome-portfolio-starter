@@ -18,15 +18,7 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
-      <div class="mt-5 talkyard-comments" data-discussion-id="">
-        <noscript>Please enable Javascript to view comments.</noscript>
-        <p class="mt-5 text-sm">
-          Comments powered by
-          <a target="_blank" rel="noopener" href="https://www.talkyard.io"
-            >Talkyard</a
-          >.
-        </p>
-      </div>
+      <div id="graphcomment"></div>
     </div>
   </Layout>
 </template>
@@ -53,13 +45,16 @@ export default {
     };
   },
   mounted() {
-    let externalScript = document.createElement("script");
-    externalScript.setAttribute("type", "application/javascript");
-    externalScript.setAttribute(
-      "src",
-      "https://comments-for-kassymdorsel-com.talkyard.net/-/talkyard-comments.min.js"
-    );
-    document.head.appendChild(externalScript);
+    window.gc_params = {
+      graphcomment_id: 'kassymdorsel',
+      // if your website has a fixed header, indicate it's height in pixels
+      fixed_header_height: 0,
+    };
+    let gc = document.createElement('script');
+    gc.type = 'text/javascript';
+    gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
   },
 };
 </script>
