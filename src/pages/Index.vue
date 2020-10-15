@@ -202,7 +202,7 @@
                 <div class="flex justify-center w-full">
                   <input
                     type="submit"
-                    value="Submit"
+                    :value="submit"
                     class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
                   />
                 </div>
@@ -329,21 +329,21 @@ export default {
   },
   data() {
     return {
-      loadingTxt: false,
+      submit: "submit",
     };
   },
   methods: {
     sendEmail(evt) {
-      this.loadingTxt = true;
+      this.submit = "sending...";
       const form = new FormData(evt.target);
       axios
         .post(process.env.GRIDSOME_FORMSPREE, form)
         .then((response) => {
           evt.target.reset();
-          this.loadingTxt = false;
+          this.submit = "submit";
         })
         .catch((error) => {
-          this.loadingTxt = false;
+          this.submit = "submit";
         });
     },
   },
