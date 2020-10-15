@@ -1,4 +1,10 @@
 module.exports = {
+  future: {
+    standardFontWeights: true,
+    defaultLineHeights: true,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: {
     content: [
       "./src/**/*.vue",
@@ -10,18 +16,6 @@ module.exports = {
       "./docs/**/*.md",
       "./blog/**/*.md",
     ],
-    options: {
-      whitelist: [
-        "body",
-        "html",
-        "img",
-        "a",
-        "g-image",
-        "g-image--lazy",
-        "g-image--loaded",
-        "active",
-      ],
-    },
   },
   theme: {
     extend: {
