@@ -22,7 +22,9 @@
         <div
           class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
         >
-          <h2 id="projects" class="font-bold mb-6">Most recent blog posts:</h2>
+          <h1 id="projects" class="font-bold mb-6 text-2xl">
+            Most recent blog posts:
+          </h1>
 
           <div
             class="absolute right-0"
@@ -65,10 +67,8 @@
       </div>
 
       <div class="overflow-x-hidden border-gray-200 border-b">
-        <div
-          class="get-to-know-me container-inner mx-auto text-xl pb-16 relative"
-        >
-          <h2 id="about" class="font-bold mb-6">Get to know me:</h2>
+        <div class="get-to-know-me container mx-auto text-xl pb-16 relative">
+          <h1 id="about" class="font-bold mb-6 text-2xl">Get to know me:</h1>
 
           <div
             class="absolute left-0"
@@ -89,21 +89,41 @@
                 class="w-32 h-32 rounded-full mb-8 lg:mb-0"
               />
             </div>
-            <div class="flex-1 text-lg sm:text-xl ml-6">
+            <div class="flex-1 text-lg sm:text-xl ml-6 text-justify">
               <p>
-                Young dedicated engineer in industrial machine design and
-                automation. I enjoy challenging the the status quo and always
-                looking at more efficient, easier, and cheaper ways of designing
-                electrical and automation projects. I believe industrial
-                automation has some catching up to do towards current software
-                best practices. I strive to use these principles and push the
-                limit of what can be done. I closely follow new technology
-                trends and offerings in the sector and implement them in my
-                projects.
+                I work in automotive parts manufacturing as a Controls Engineer.
+                I design, build, program, and debug manufacturing machines using
+                many different Beckhoff technologies. I work with many different
+                industrial processes, such as laser cutting, vision systems,
+                industrial robots and many more. I am the main designer and
+                maintener of our company's internal fully featured PLC library.
+                I like to bring the best practices from the software world into
+                the industrial PLC world.
               </p>
               <p class="mt-6">
-                Get in touch with me with any Beckhoff or TwinCAT 3 questions.
-                It might turn into a blog post.
+                My work also has me diving into time series data. Be it process
+                control, condition monitoring, OEE analysis and even individual
+                device monitoring down to the smallest pneumatic cylinder. A lot
+                of my work uses the open source trifecta of data analytics.
+                <a
+                  href="https://www.postgresql.org/"
+                  target="_blank"
+                  rel="noopener"
+                  >PostgreSQL</a
+                >,
+                <a
+                  href="https://www.timescale.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Timescale</a
+                >, and
+                <a href="https://grafana.com/" target="_blank" rel="noopener"
+                  >Grafana</a
+                >.
+              </p>
+              <p class="mt-6">
+                Drop me a message with any Beckhoff, TwinCAT 3, EtherCAT, I/O or
+                Motion questions. It might turn into my next blog post.
               </p>
             </div>
           </div>

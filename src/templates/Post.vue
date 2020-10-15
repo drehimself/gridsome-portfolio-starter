@@ -46,15 +46,20 @@ export default {
   },
   mounted() {
     window.gc_params = {
-      graphcomment_id: 'kassymdorsel',
+      graphcomment_id: "kassymdorsel",
       // if your website has a fixed header, indicate it's height in pixels
       fixed_header_height: 0,
     };
-    let gc = document.createElement('script');
-    gc.type = 'text/javascript';
+    let gc = document.createElement("script");
+    gc.type = "text/javascript";
     gc.async = true;
-    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+    gc.src =
+      "https://graphcomment.com/js/integration.js?" +
+      Math.round(Math.random() * 1e8);
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(gc);
   },
 };
 </script>

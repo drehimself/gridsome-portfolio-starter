@@ -1,7 +1,7 @@
 ---
 title: EtherCAT Master CRC Error
 path: /ethercat-master-crc-error
-date: 2020-07-25
+date: 2020-07-20
 summary: EtherCAT CRC error between IPC and first ethercat device due to cycle time and port ethernet election
 tags: ['beckhoff', 'twincat', 'ethercat', 'hardware', 'ipc']
 ---
