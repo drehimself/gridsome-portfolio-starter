@@ -344,6 +344,10 @@ export default {
         })
         .catch((error) => {
           this.submit = "submit";
+          this.$gtag.exception({
+            description: "Contact form fail",
+            fatal: false,
+          });
         });
     },
   },

@@ -4,6 +4,7 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
 import VueFuse from "vue-fuse";
+import VueGtag from "vue-gtag";
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -15,6 +16,16 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   Vue.use(VueFuse);
+
+  Vue.use(
+    VueGtag,
+    {
+      config: { id: process.env.UA },
+      appName: "kassymdorsel",
+      pageTrackerScreenviewEnabled: true,
+    },
+    router
+  );
 
   head.meta.push({
     name: "keywords",
