@@ -23,8 +23,7 @@
         defer
         src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"
       ></script>
-      <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-      <div class="talkyard-comments" style="margin-top: 45px">
+      <div class="mt-5 talkyard-comments" data-discussion-id="">
         <noscript>Please enable Javascript to view comments.</noscript>
         <p class="mt-5 text-sm">
           Comments powered by
