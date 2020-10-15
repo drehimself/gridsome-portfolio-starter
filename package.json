@@ -9,15 +9,16 @@
     "test": "./node_modules/.bin/cypress open"
   },
   "dependencies": {
+    "@gridsome/plugin-critical": "^0.2.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
     "@gridsome/vue-remark": "^0.2.5",
+    "@microflash/gridsome-plugin-feed": "^1.1.7",
     "axios": "^0.20.0",
     "commentbox.io": "^2.0.0",
     "gridsome": "^0.7.21",
     "gridsome-plugin-remark-shiki": "^0.3.1",
-    "gridsome-plugin-rss": "^1.2.0",
     "vue-fuse": "^2.2.1",
     "vue-gtag": "^1.9.1",
     "vue-scrollto": "^2.19.1"

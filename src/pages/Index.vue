@@ -84,9 +84,11 @@
           >
             <div>
               <g-image
-                src="../../static/avatar.jpg"
+                src="../assets/avatar.png"
                 alt="avatar"
-                class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+                height="192"
+                width="192"
+                class="w-48 h-48 rounded-full mb-8 lg:mb-0"
               />
             </div>
             <div class="flex-1 text-lg sm:text-xl ml-6 text-justify">

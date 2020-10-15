@@ -10,6 +10,8 @@ module.exports = {
   siteName: "Unofficial Beckhoff and TwinCAT Blog",
   siteDescription: "My personal blog about beckhoff and twincat discoveries",
   siteUrl: siteurl,
+  titleTemplate: "%s | UBTB",
+  icon: "./src/assets/favicon.png",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -43,25 +45,41 @@ module.exports = {
       },
     },
     {
-      use: "gridsome-plugin-rss",
+      use: "@gridsome/plugin-critical",
       options: {
-        contentTypeName: "Post",
+        paths: ["/"],
+        width: 1300,
+        height: 900,
+      },
+    },
+    {
+      use: "@microflash/gridsome-plugin-feed",
+      options: {
+        contentTypes: ["Post"],
         feedOptions: {
-          title: "My personal blog about Beckhoff and TwinCAT musings",
-          feed_url: siteurl + "/rss.xml",
-          site_url: siteurl,
+          title: "Unofficial Beckhoff and TwinCAT Blog",
+          description: "My personal blog about Beckhoff and TwinCAT musings",
         },
-        feedItemOptions: (node) => ({
+        rss: {
+          enabled: true,
+          output: "/feed.xml",
+        },
+        atom: {
+          enabled: true,
+          output: "/feed.atom",
+        },
+        json: {
+          enabled: true,
+          output: "/feed.json",
+        },
+        maxItems: 25,
+        nodeToFeedItem: (node) => ({
           title: node.title,
           description: node.summary,
           url: siteurl + node.path,
           author: "Kassym Dorsel",
           date: node.date,
         }),
-        output: {
-          dir: "./static",
-          name: "rss.xml",
-        },
       },
     },
     {

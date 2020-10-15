@@ -101,7 +101,7 @@
           </div>
           <div>
             <a
-              href="/rss.xml"
+              href="/feed.xml"
               class="text-white hover:text-gray-400 font-normal"
               >RSS Feed</a
             >
