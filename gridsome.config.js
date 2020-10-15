@@ -8,8 +8,7 @@ let siteurl = "https://ubtb.com/";
 
 module.exports = {
   siteName: "Unofficial Beckhoff and TwinCAT Blog",
-  siteDescription:
-    "My personal blog about beckhoff and twincat discoveries",
+  siteDescription: "My personal blog about beckhoff and twincat discoveries",
   siteUrl: siteurl,
   plugins: [
     {

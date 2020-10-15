@@ -9,7 +9,9 @@
       >
         <div class="tracking-wide">
           <g-link class="uppercase text-3xl font-bold" to="/">ubtb</g-link>
-          <span class="font-normal text-xs ml-1 align-bottom">by Kassym Dorsel</span>
+          <span class="font-normal text-xs ml-1 align-bottom"
+            >by Kassym Dorsel</span
+          >
         </div>
         <div class="block lg:hidden">
           <button
