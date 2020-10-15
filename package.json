@@ -21,7 +21,6 @@
     "vue-scrollto": "^2.19.1"
   },
   "devDependencies": {
-    "cypress": "^5.0.0",
     "@vue/cli-plugin-eslint": "^4.5.7",
     "@vue/cli-service": "^4.5.7",
     "@vue/eslint-config-prettier": "^6.0.0",
@@ -33,5 +32,8 @@
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "prettier": "^2.1.2",
     "vue-eslint-parser": "^7.1.1"
+  },
+  "optionalDependencies": {
+    "cypress": "^5.0.0"
   }
 }
