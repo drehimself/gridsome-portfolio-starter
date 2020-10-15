@@ -18,21 +18,17 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: "keywords",
-    content: "beckhoff,twincat,vision,plc,structured text,data,visualization",
+    content:
+      "beckhoff,twincat,vision,plc,structured text,data,visualization,programming,iot",
   });
 
   head.meta.push({
     name: "description",
-    content: "Blog about Beckhoff related technologies",
+    content: "Blog about Beckhoff and TwinCAT related technologies",
   });
 
   head.meta.push({
     name: "author",
     content: "Kassym Dorsel",
-  });
-
-  head.link.push({
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,700",
   });
 }

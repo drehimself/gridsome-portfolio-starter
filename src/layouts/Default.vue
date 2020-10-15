@@ -15,6 +15,7 @@
         </div>
         <div class="block lg:hidden">
           <button
+            aria-label="Toggle Menu"
             class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
             data-cypress="hamburger"
             @click="toggle"
@@ -133,8 +134,10 @@
           </li>
           <li>
             <a
+              aria-label="Stack overflow"
               href="https://stackoverflow.com/users/991805/kassym-dorsel"
               target="_blank"
+              rel="noopener"
               class="text-white hover:text-gray-400"
             >
               <svg fill="currentColor" width="19" height="22">
@@ -147,8 +150,10 @@
           </li>
           <li>
             <a
+              aria-label="Github"
               href="https://github.com/kdorsel"
               target="_blank"
+              rel="noopener"
               class="text-white hover:text-gray-400"
             >
               <svg

@@ -12,7 +12,9 @@
       <div class="mt-8 sm:mt-0">
         <g-image
           src="../../static/twincat3.jpg"
-          alt="hero"
+          width="450"
+          height="180"
+          alt="twincat 3"
           class="mx-auto sm:mx-0"
         />
       </div>
@@ -326,11 +328,11 @@ export default {
       axios
         .post(process.env.GRIDSOME_FORMSPREE, form)
         .then((response) => {
+          evt.target.reset();
           this.loadingTxt = false;
         })
         .catch((error) => {
-          if (error.response) {
-          }
+          this.loadingTxt = false;
         });
     },
   },
