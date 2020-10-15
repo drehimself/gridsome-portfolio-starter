@@ -9,15 +9,6 @@
           Discoveries, musings and insights
         </div>
       </div>
-      <div class="mt-8 sm:mt-0">
-        <g-image
-          src="../../static/twincat3.jpg"
-          width="450"
-          height="180"
-          alt="twincat 3"
-          class="mx-auto sm:mx-0"
-        />
-      </div>
     </div>
     <!-- end hero -->
 
