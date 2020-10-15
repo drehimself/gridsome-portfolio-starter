@@ -116,6 +116,7 @@
         <ul class="flex items-center space-x-8">
           <li>
             <a
+              aria-label="mail to"
               href="mailto:kdorsel@gmail.com"
               class="text-white hover:text-gray-400"
             >

@@ -6,6 +6,7 @@
       <input
         ref="search"
         v-model="query"
+        aria-label="Search"
         type="text"
         placeholder='Search (Press  "/" to focus)'
         class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
