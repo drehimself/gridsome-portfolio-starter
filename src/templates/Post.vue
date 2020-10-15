@@ -18,12 +18,9 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
-      <script type="application/javascript">
-        talkyardServerUrl =
-          "https://comments-for-kassymdorsel-com.talkyard.net";
-      </script>
       <script
         type="application/javascript"
+        defer
         src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"
       ></script>
       <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
@@ -55,7 +52,7 @@ query Post($path: String!) {
 </page-query>
 
 <script>
-import CommentBox from "../components/CommentBox";
+const talkyardServerUrl = "https://comments-for-kassymdorsel-com.talkyard.net";
 
 export default {
   metaInfo() {
