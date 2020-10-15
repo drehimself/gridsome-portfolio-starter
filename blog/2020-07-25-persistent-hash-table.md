@@ -2,11 +2,11 @@
 title: Persistent Hash Table
 path: /persistent-hash-table
 date: 2020-07-25
-summary: Creating a deterministic, potentially persistent, HashTable FB which uses strings as keys
+summary: Creating a deterministic, persistent enabled, HashTable FB which uses strings as keys
 tags: ['beckhoff', 'twincat', 'function', 'fb', 'software', 'struct']
 ---
 
-> Creating a deterministic, potentially persistent, HashTable FB which uses strings as keys
+> Creating a deterministic, persistent enabled, HashTable FB which uses strings as keys
 
 ### Introduction
 Beckhoff currently offers a hash table implementation in their `Tc2_Utilities` library. It uses a `DWORD` as key and `PVOID` as value. I was looking at creating an easy to use string key based counter FB that can be set as being persistent to keep track of tool life or part counter on a machine. This would mean a persistent string hash FB.

@@ -3,7 +3,7 @@
     <div class="container mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-3">{{ $page.post.date }}</div>
-      <div class="flex flex-wrap text-xs">
+      <div class="flex flex-wrap mb-3 text-xs">
         <g-link
           v-for="tag in $page.post.tags"
           :key="tag.id"
