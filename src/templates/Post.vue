@@ -18,6 +18,7 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
+      <comment-box />
     </div>
   </Layout>
 </template>
@@ -37,11 +38,16 @@ query Post($path: String!) {
 </page-query>
 
 <script>
+import CommentBox from "../components/CommentBox";
+
 export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
     };
+  },
+  components: {
+    CommentBox,
   },
 };
 </script>

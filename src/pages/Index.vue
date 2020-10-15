@@ -133,7 +133,12 @@
             </div>
 
             <div class="text-lg sm:text-lg mb-16">
-              <form action="#" class="mb-12">
+              <form
+                role="form"
+                method="POST"
+                class="mb-12"
+                @submit.prevent="sendEmail"
+              >
                 <div class="flex flex-wrap mb-6 -mx-4">
                   <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
                     <label class="block mb-2 text-copy-primary" for="name">
@@ -158,7 +163,7 @@
                     <input
                       id="email"
                       type="email"
-                      name="email"
+                      name="_replyto"
                       placeholder="email@example.com"
                       class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
                       required
@@ -303,9 +308,31 @@ query Posts {
 </page-query>
 
 <script>
+import axios from "axios";
+
 export default {
   metaInfo: {
     title: "Home",
+  },
+  data() {
+    return {
+      loadingTxt: false,
+    };
+  },
+  methods: {
+    sendEmail(evt) {
+      this.loadingTxt = true;
+      const form = new FormData(evt.target);
+      axios
+        .post(process.env.GRIDSOME_FORMSPREE, form)
+        .then((response) => {
+          this.loadingTxt = false;
+        })
+        .catch((error) => {
+          if (error.response) {
+          }
+        });
+    },
   },
 };
 </script>
