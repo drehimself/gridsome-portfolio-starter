@@ -4,7 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-let siteurl = "https://ubtb.com/";
+let siteurl = "https://kassymdorsel.com";
 
 module.exports = {
   siteName: "Unofficial Beckhoff and TwinCAT Blog",
@@ -48,7 +48,7 @@ module.exports = {
         contentTypeName: "Post",
         feedOptions: {
           title: "My personal blog about Beckhoff and TwinCAT musings",
-          feed_url: siteurl + "rss.xml",
+          feed_url: siteurl + "/rss.xml",
           site_url: siteurl,
         },
         feedItemOptions: (node) => ({
