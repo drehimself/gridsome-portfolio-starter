@@ -21,8 +21,6 @@ export default function (Vue, { router, head, isClient }) {
     VueGtag,
     {
       config: { id: process.env.UA },
-      appName: "kassymdorsel",
-      pageTrackerScreenviewEnabled: true,
     },
     router
   );
