@@ -18,11 +18,6 @@
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
-      <script
-        type="application/javascript"
-        defer
-        src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"
-      ></script>
       <div class="mt-5 talkyard-comments" data-discussion-id="">
         <noscript>Please enable Javascript to view comments.</noscript>
         <p class="mt-5 text-sm">
@@ -51,13 +46,20 @@ query Post($path: String!) {
 </page-query>
 
 <script>
-const talkyardServerUrl = "https://comments-for-kassymdorsel-com.talkyard.net";
-
 export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
     };
+  },
+  mounted() {
+    let externalScript = document.createElement("script");
+    externalScript.setAttribute("type", "application/javascript");
+    externalScript.setAttribute(
+      "src",
+      "https://comments-for-kassymdorsel-com.talkyard.net/-/talkyard-comments.min.js"
+    );
+    document.head.appendChild(externalScript);
   },
 };
 </script>
