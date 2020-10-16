@@ -10,7 +10,6 @@
         </div>
       </div>
     </div>
-    <!-- end hero -->
 
     <div class="container mx-auto">
       <p class="text-lg sm:text-xl">
@@ -54,16 +53,8 @@
             <div class="text-lg mb-4">
               {{ post.node.summary }}
             </div>
-
-            <div class="mb-8">
-              <g-link :to="post.node.path" class="font-bold uppercase"
-                >Read More</g-link
-              >
-            </div>
           </div>
-          <!-- end post -->
         </div>
-        <!-- end projects -->
       </div>
 
       <div class="overflow-x-hidden border-gray-200 border-b">
@@ -130,7 +121,6 @@
             </div>
           </div>
         </div>
-        <!-- end get-to-know me -->
       </div>
 
       <div class="overflow-x-hidden">
@@ -212,7 +202,6 @@
             </div>
           </div>
         </div>
-        <!-- end contact-me -->
       </div>
 
       <div class="container mx-auto -mt-32 pb-4 overflow-x-hidden">

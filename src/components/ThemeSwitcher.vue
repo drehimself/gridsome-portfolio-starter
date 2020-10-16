@@ -1,6 +1,7 @@
 <template>
   <a
     href="#"
+    aria-label="Theme Switcher"
     class="text-copy-primary hover:text-gray-600"
     data-cypress="switchTheme"
     @click.prevent="toggleTheme"
