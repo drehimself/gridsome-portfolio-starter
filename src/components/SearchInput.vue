@@ -98,15 +98,6 @@ query Search {
       }
     }
   }
-  allDocumentation {
-    edges {
-      node {
-        id
-        path
-        title
-      }
-    }
-  }
 }
 </static-query>
 
