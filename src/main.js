@@ -5,6 +5,7 @@ import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
 import VueFuse from "vue-fuse";
 import VueGtag from "vue-gtag";
+import VueAmplitude from 'vue-amplitude-js';
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -24,6 +25,8 @@ export default function (Vue, { router, head, isClient }) {
     },
     router
   );
+
+  Vue.use(VueAmplitude, { apiKey: process.env.GRIDSOME_AMPLITUDE });
 
   head.meta.push({
     name: "keywords",

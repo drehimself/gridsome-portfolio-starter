@@ -339,6 +339,7 @@ export default {
             description: "Contact form fail",
             fatal: false,
           });
+          this.$amplitude.getInstance().logEvent('contact_form_fail');
         });
     },
   },
