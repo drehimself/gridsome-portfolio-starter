@@ -9,6 +9,7 @@
     "test": "./node_modules/.bin/cypress open"
   },
   "dependencies": {
+    "@amplitude/node": "^1.0.3",
     "@gridsome/plugin-critical": "^0.2.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",

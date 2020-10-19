@@ -224,7 +224,6 @@ query {
 <script>
 import SearchInput from "../components/SearchInput";
 import ThemeSwitcher from "../components/ThemeSwitcher";
-const amplitude = require('amplitude-js');
 
 export default {
   components: {
@@ -239,7 +238,9 @@ export default {
   },
   mounted() {
     this.theme = localStorage.getItem("theme") || "theme-light";
-    amplitude.getInstance().init(process.env.GRIDSOME_AMPLITUDE);
+    import('../../node_modules/amplitude-js').then(amplitude => {
+      amplitude.getInstance().init(process.env.GRIDSOME_AMPLITUDE);
+    });
   },
   methods: {
     toggle() {
