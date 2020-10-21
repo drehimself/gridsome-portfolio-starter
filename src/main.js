@@ -42,6 +42,7 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   head.script.push({
-    src: "//s3-us-west-2.amazonaws.com/momently-static/loader/72ysQgAuARo_momently.js",
+    src:
+      "//s3-us-west-2.amazonaws.com/momently-static/loader/72ysQgAuARo_momently.js",
   });
 }

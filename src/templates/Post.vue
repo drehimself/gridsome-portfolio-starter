@@ -42,6 +42,32 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.summary,
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.title,
+        },
+        {
+          property: "og:url",
+          cotent: this.$page.post.path,
+        },
+        {
+          property: "og:description",
+          cotent: this.$page.post.summary,
+        },
+        {
+          property: "og:type",
+          cotent: "article",
+        },
+        {
+          property: "og:article:published_time",
+          cotent: this.$page.post.date,
+        },
+      ],
     };
   },
   mounted() {

@@ -238,7 +238,7 @@ export default {
   },
   mounted() {
     this.theme = localStorage.getItem("theme") || "theme-light";
-    import('../../node_modules/amplitude-js').then(amplitude => {
+    import("../../node_modules/amplitude-js").then((amplitude) => {
       amplitude.getInstance().init(process.env.GRIDSOME_AMPLITUDE);
     });
   },
