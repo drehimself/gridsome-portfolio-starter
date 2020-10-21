@@ -45,4 +45,10 @@ export default function (Vue, { router, head, isClient }) {
     src:
       "//s3-us-west-2.amazonaws.com/momently-static/loader/72ysQgAuARo_momently.js",
   });
+  head.script.push({
+    async: true,
+    defer: true,
+    "data-website-id": "a4d90b68-b4c8-4046-bddd-f9aa026d3ee8",
+    src: "https://umami-sigma.vercel.app/umami.js",
+  });
 }
