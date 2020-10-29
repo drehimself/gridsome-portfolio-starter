@@ -28,12 +28,12 @@ export default function (Vue, { router, head, isClient }) {
   head.meta.push({
     name: "keywords",
     content:
-      "beckhoff,twincat,vision,plc,structured text,data,visualization,programming,iot",
+      "industrial,robots,machine,beckhoff,twincat,vision,plc,structured text,data,visualization,iot,inspection",
   });
 
   head.meta.push({
     name: "description",
-    content: "Blog about Beckhoff and TwinCAT related technologies",
+    content: "Blog about Beckhoff, TwinCAT and industrial technologies",
   });
 
   head.meta.push({
@@ -49,6 +49,6 @@ export default function (Vue, { router, head, isClient }) {
     async: true,
     defer: true,
     "data-website-id": "a4d90b68-b4c8-4046-bddd-f9aa026d3ee8",
-    src: "https://umami-sigma.vercel.app/umami.js",
+    src: "https://umami-coral.vercel.app/umami.js",
   });
 }
