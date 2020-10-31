@@ -48,7 +48,7 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
     async: true,
     defer: true,
-    "data-website-id": "a4d90b68-b4c8-4046-bddd-f9aa026d3ee8",
+    "data-website-id": "478996fa-3885-4f15-92fc-c31244a7244d",
     src: "https://umami-coral.vercel.app/umami.js",
   });
 }
