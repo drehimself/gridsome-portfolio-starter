@@ -920,10 +920,10 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.6.2.tgz#ab8822556cdbc9dd4a53115aa125668b233d6998"
-  integrity sha512-6kkdKg35vuCiZYfNxM+rqkZjG9ztgCAVT8bb3Kqqu+/FNCwMYUInIfWeW7ApAjj+ng/YFG1tB+fAABCeH3sEbw==
+"@gridsome/transformer-remark@^0.6.2", "@gridsome/transformer-remark@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.6.3.tgz#bac601e7f7aa8c346d83137334168059b6a26c9d"
+  integrity sha512-pU98Kn+/DIK1fBaop6QbL4+HMchbg3Nz57duBWVAtQ0WDLjNzYm1EnqsTjQyxrgt077sEjSLScrVmoAsxlsLZQ==
   dependencies:
     gray-matter "^4.0.2"
     hash-sum "^1.0.2"
