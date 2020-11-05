@@ -45,10 +45,17 @@ export default function (Vue, { router, head, isClient }) {
     src:
       "//s3-us-west-2.amazonaws.com/momently-static/loader/72ysQgAuARo_momently.js",
   });
+
   head.script.push({
     async: true,
     defer: true,
     "data-website-id": "478996fa-3885-4f15-92fc-c31244a7244d",
     src: "https://umami-coral.vercel.app/umami.js",
+  });
+
+  head.script.push({
+    async: true,
+    innerHTML: "var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101285799);",
+    src: "//static.getclicky.com/js",
   });
 }
