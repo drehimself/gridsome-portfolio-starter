@@ -14,7 +14,8 @@
     <div class="container mx-auto">
       <p class="text-lg sm:text-xl">
         This is my personal blog for all things related to Beckhoff, TwinCAT,
-        IoT, Data Aggregation, Data Visualization and any other technologies.
+        industrial automation, IoT, data aggregation, data Vvisualization,
+        Grafana, Timescale, PostgreSQL, and any other related technologies.
       </p>
 
       <div class="overflow-x-hidden">
