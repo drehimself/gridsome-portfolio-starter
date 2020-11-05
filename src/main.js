@@ -4,7 +4,6 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import VueScrollTo from "vue-scrollto";
 import VueFuse from "vue-fuse";
-import VueGtag from "vue-gtag";
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -16,14 +15,6 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   Vue.use(VueFuse);
-
-  Vue.use(
-    VueGtag,
-    {
-      config: { id: process.env.GRIDSOME_UA },
-    },
-    router
-  );
 
   head.meta.push({
     name: "keywords",
@@ -48,14 +39,16 @@ export default function (Vue, { router, head, isClient }) {
 
   head.script.push({
     async: true,
-    defer: true,
     "data-website-id": "478996fa-3885-4f15-92fc-c31244a7244d",
     src: "https://umami-coral.vercel.app/umami.js",
   });
 
   head.script.push({
-    async: true,
     innerHTML: "var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101285799);",
+  });
+
+  head.script.push({
+    async: true,
     src: "//static.getclicky.com/js",
   });
 }
