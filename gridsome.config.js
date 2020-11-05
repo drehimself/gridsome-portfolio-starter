@@ -5,13 +5,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 let siteurl = "https://kassymdorsel.com";
+let siteTitle = "Unofficial Beckhoff and TwinCAT Blog";
+let siteDescription = "Personal blog about beckhoff, twincat, data anaysis, and industrial automation";
 
 module.exports = {
-  siteName: "Unofficial Beckhoff and TwinCAT Blog",
-  siteDescription: "My personal blog about beckhoff and twincat discoveries",
+  siteName: siteTitle,
+  siteDescription: siteDescription,
   siteUrl: siteurl,
-  titleTemplate: "%s | UBTB",
-  icon: "./src/assets/favicon.png",
+  titleTemplate: "%s",
+  icon: "./src/assets/favicon.ico",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -42,8 +44,8 @@ module.exports = {
       options: {
         contentTypes: ["Post"],
         feedOptions: {
-          title: "Unofficial Beckhoff and TwinCAT Blog",
-          description: "My personal blog about Beckhoff and TwinCAT musings",
+          title: siteTitle,
+          description: siteDescription,
         },
         rss: {
           enabled: true,
