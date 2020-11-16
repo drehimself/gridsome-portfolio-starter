@@ -4535,10 +4535,10 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-remark-shiki@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-shiki/-/gridsome-plugin-remark-shiki-0.5.0.tgz#a6da5bf446198fd465ee1aabf75944904e1b3047"
-  integrity sha512-uOtkt8HCYE+psJs/8lfmimceWjjmiufHK+DAfhJSHs0FYbbPyF7fXuR2+P8QNxm55RY6WNG20pYe72hWgi/Fcw==
+gridsome-plugin-remark-shiki@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-shiki/-/gridsome-plugin-remark-shiki-0.6.0.tgz#88110d129e4fe56317b4be82792e910490f722fb"
+  integrity sha512-2V+P/O9vumRxa6ymcqAn5V6pAsv/iYffzV6i6vFmZHL/+asFlXeFXEOYwbyccCjIqXDiLzB//oaz+PHwFpkw6A==
   dependencies:
     shiki "^0.2.6"
     shiki-languages "^0.2.6"
