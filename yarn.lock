@@ -920,7 +920,7 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.6.3", "@gridsome/transformer-remark@^0.6.4":
+"@gridsome/transformer-remark@^0.6.4":
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.6.4.tgz#e2b5319fc021379730cfd86b4f1c1276d8677b5e"
   integrity sha512-DCRQn1KFLk9Iy+ZjhDdYoTOYhEBphP57dRsLkhLqcnbuMCttDcI6V9udUR6GHgWWN3h0XV2dGVXcQ056Xm9Hpg==
