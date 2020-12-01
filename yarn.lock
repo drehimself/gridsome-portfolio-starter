@@ -4562,10 +4562,10 @@ gridsome-plugin-tailwindcss@^3.0.1:
     postcss-preset-env "^6.7.0"
     tailwindcss ">=1.4"
 
-gridsome@^0.7.22:
-  version "0.7.22"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.22.tgz#bca2a739e048402aff2e3caaa4bf4f8797b35a24"
-  integrity sha512-zfJdm0EfPi2ZMGi5pQVKtdWjPG7nRZfvDDo9iH733nMW2f0B1EpGIRQUiQ2CZ9UkXluBeqQSLiA8r6e4yNbffw==
+gridsome@^0.7.23:
+  version "0.7.23"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.23.tgz#d8b06bdf6b4ed06411be3ec3696324f29c83063e"
+  integrity sha512-2/koBt4YWoTKRQR+7Gy84EHbNTa9y6JgRjBO84wOpZjEWglwxDh0cFAq8QbhHnf13mXbJVRm5aHBESO5iD5BcA==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"
