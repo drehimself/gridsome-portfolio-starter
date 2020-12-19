@@ -15,9 +15,13 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "@gridsome/vue-remark": "^0.2.5",
     "@microflash/gridsome-plugin-feed": "^1.1.7",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
     "axios": "^0.21.0",
     "gridsome": "^0.7.21",
     "gridsome-plugin-remark-shiki": "^0.6.0",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-fuse": "^2.2.1",
     "vue-scrollto": "^2.19.1"
   },
@@ -32,7 +36,6 @@
     "eslint-plugin-vue": "^7.0.1",
     "gridsome-plugin-tailwindcss": "^4.1.1",
     "prettier": "^2.1.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-eslint-parser": "^7.1.1"
   },
   "optionalDependencies": {}
