@@ -33,12 +33,6 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   head.script.push({
-    async: true,
-    "data-website-id": "478996fa-3885-4f15-92fc-c31244a7244d",
-    src: "https://umami-coral.vercel.app/umami.js",
-  });
-
-  head.script.push({
     innerHTML: "var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101285799);",
   });
 
