@@ -5,9 +5,18 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  siteOwner: 'Andre Madarang',
+  siteAuthor: 'Andre Madarang',
+  siteTwitter: '@drehimself',
+  authorTwitter: '@drehimself',
   siteName: 'Gridsome Portfolio Starter',
   siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
+  siteKeywords: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS',
   siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  // take a screen-shot of the homepage and make it available online
+  // go to https://gridsome-portfolio-starter.netlify.com/landing_image
+  // right click on the image and select: Copy Image Address and put the contents in siteImage
+  siteImage: 'https://gridsome-portfolio-starter.netlify.com/assets/static/landing_image.png',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
