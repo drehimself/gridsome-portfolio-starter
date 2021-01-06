@@ -15,7 +15,7 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "@gridsome/vue-remark": "^0.2.5",
     "@microflash/gridsome-plugin-feed": "^1.1.7",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "^9",
     "axios": "^0.21.0",
     "gridsome": "^0.7.21",
