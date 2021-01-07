@@ -203,6 +203,7 @@
             </div>
           </div>
         </div>
+        <Newsletter />
       </div>
 
       <div class="container mx-auto -mt-32 pb-4 overflow-x-hidden">
@@ -313,11 +314,15 @@ query Posts {
 </page-query>
 
 <script>
+import Newsletter from "../components/Newsletter";
 import axios from "axios";
 
 export default {
   metaInfo: {
     title: "Home",
+  },
+  components: {
+    Newsletter,
   },
   data() {
     return {

@@ -1,0 +1,56 @@
+<template>
+  <div
+    class="text-center mb-6 container mx-auto pb-1 relative bg-background-secondary"
+  >
+    <h2 class="font-bold text-2xl sm:text-3xl">Want the latest blog posts?</h2>
+    <span class="mb-6 text-sm"
+      >Sign up for my newsletter and stay updated!</span
+    >
+    <form method="POST" class="my-3" @submit.prevent="sendEmail">
+      <div class="w-full mb-6 px-4">
+        <input
+          type="email"
+          name="EMAIL"
+          placeholder="email@example.com"
+          class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-green-700 mb-2 p-4"
+          required
+        />
+      </div>
+
+      <div class="flex justify-center w-full">
+        <input
+          type="submit"
+          :value="submit"
+          class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
+        />
+      </div>
+    </form>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      submit: "sign up",
+    };
+  },
+  methods: {
+    sendEmail(evt) {
+      this.submit = "sending...";
+      const form = new FormData(evt.target);
+      axios
+        .post(process.env.GRIDSOME_SENDINBLUE, form)
+        .then((response) => {
+          evt.target.reset();
+          this.submit = "thank you!";
+        })
+        .catch((error) => {
+          this.submit = "submit";
+        });
+    },
+  },
+};
+</script>
