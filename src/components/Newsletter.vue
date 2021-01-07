@@ -6,7 +6,7 @@
     <span class="mb-6 text-sm"
       >Sign up for my newsletter and stay updated!</span
     >
-    <form method="POST" class="my-3" @submit.prevent="sendEmail">
+    <form method="POST" class="my-3" :action="action">
       <div class="w-full mb-6 px-4">
         <input
           type="email"
@@ -20,7 +20,7 @@
       <div class="flex justify-center w-full">
         <input
           type="submit"
-          :value="submit"
+          value="sign up"
           class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
         />
       </div>
@@ -34,24 +34,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      submit: "sign up",
+      action: process.env.GRIDSOME_MAILCHIMP,
     };
-  },
-  methods: {
-    sendEmail(evt) {
-      console.log(process.env.GRIDSOME_SENDINBLUE);
-      this.submit = "sending...";
-      const form = new FormData(evt.target);
-      axios
-        .post(process.env.GRIDSOME_SENDINBLUE, form)
-        .then((response) => {
-          evt.target.reset();
-          this.submit = "thank you!";
-        })
-        .catch((error) => {
-          this.submit = "submit";
-        });
-    },
   },
 };
 </script>
