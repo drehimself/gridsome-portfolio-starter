@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     sendEmail(evt) {
+      console.log(process.env.GRIDSOME_SENDINBLUE);
       this.submit = "sending...";
       const form = new FormData(evt.target);
       axios

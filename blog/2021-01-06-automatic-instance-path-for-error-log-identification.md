@@ -1,5 +1,5 @@
 ---
-title: Automatic instance path for error and log identification
+title: Automatic Instance Path for Error and Log Identification
 path: /automatic-instance-path-for-error-log-identification
 date: 2021-01-06
 summary: All POUs can have their device tree path automatically initialized into a variable. This can used as a unique string identification for the part of the code and can be used for easy identification of errors, logs, counters, etc.
