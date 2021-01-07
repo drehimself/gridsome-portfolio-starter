@@ -6,7 +6,8 @@
 
 let siteurl = "https://kassymdorsel.com";
 let siteTitle = "Unofficial Beckhoff and TwinCAT Blog";
-let siteDescription = "Personal blog about beckhoff, twincat, data anaysis, and industrial automation";
+let siteDescription =
+  "Personal blog about beckhoff, twincat, data anaysis, and industrial automation";
 
 module.exports = {
   siteName: siteTitle,

@@ -33,7 +33,8 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   head.script.push({
-    innerHTML: "var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101285799);",
+    innerHTML:
+      "var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101285799);",
   });
 
   head.script.push({

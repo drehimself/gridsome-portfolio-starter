@@ -125,7 +125,7 @@
       </div>
 
       <div class="overflow-x-hidden">
-        <div class="contact-me bg-background-secondary pt-6">
+        <div class="contact-me bg-background-secondary pt-6 mb-12">
           <div class="container mx-auto text-xl pb-1 relative">
             <h2 id="contact" class="font-bold mb-6">Contact me</h2>
 
@@ -138,15 +138,15 @@
               </svg>
             </div>
 
-            <div class="text-lg sm:text-lg mb-16">
+            <div class="text-lg sm:text-lg mb-6">
               <form
                 role="form"
                 method="POST"
-                class="mb-12"
+                class="mb-3"
                 @submit.prevent="sendEmail"
               >
-                <div class="flex flex-wrap mb-6 -mx-4">
-                  <div class="w-full md:w-1/2 mb-6 md:mb-0 px-4">
+                <div class="flex flex-wrap mb-1 -mx-4">
+                  <div class="w-full md:w-1/2 mb-1 md:mb-0 px-4">
                     <label class="block mb-2 text-copy-primary" for="name">
                       Name
                     </label>
@@ -177,7 +177,7 @@
                   </div>
                 </div>
 
-                <div class="w-full mb-12">
+                <div class="w-full mb-6">
                   <label class="block text-copy-primary mb-2" for="message">
                     Message
                   </label>
@@ -336,10 +336,6 @@ export default {
         })
         .catch((error) => {
           this.submit = "submit";
-          this.$gtag.exception({
-            description: "Contact form fail",
-            fatal: false,
-          });
         });
     },
   },
