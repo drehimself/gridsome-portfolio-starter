@@ -456,13 +456,17 @@ VAR_GLOBAL PERSISTENT
 	CNT : FB_Hash(enDb:=FALSE);
 END_VAR
 
-// In each station have its instancePath defined with {attribute 'reflection'} (this is a subject for another post)
-CNT.inc(instancePath); // Equivalent to CNT.inc('MAIN.station1');
+// Each station would have its _sid defined automatically base on instance path.
+CNT.inc(_sid); // Equivalent to CNT.inc('MAIN.station1');
 CNT.inc('MAIN.station1.tool1'); //CNT.inc(CONCAT(instancePath, '.tool1'));
 CNT.inc('MAIN.station1.tool2');
 CNT.inc('MAIN.station1.tool3');
 ```
+
+> See [Instance Path](/automatic-instance-path-for-error-log-identification/) blog for more information on `_sid`.
+
 And on the HMI have a button linked to the reset method. If you have a database connection, it will also automatically push it up.
+
 ```typescript
 CNT.reset('MAIN.station1.tool3');
 ```
