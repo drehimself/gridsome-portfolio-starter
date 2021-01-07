@@ -14,7 +14,7 @@
     <div class="container mx-auto">
       <p class="text-lg sm:text-xl">
         This is my personal blog for all things related to Beckhoff, TwinCAT,
-        industrial automation, IoT, data aggregation, data Vvisualization,
+        industrial automation, IoT, data aggregation, data Visualization,
         Grafana, Timescale, PostgreSQL, and any other related technologies.
       </p>
 
@@ -23,7 +23,7 @@
           class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
         >
           <h1 id="projects" class="font-bold mb-6 text-2xl">
-            Most recent blog posts:
+            Most recent blog posts
           </h1>
 
           <div
@@ -60,7 +60,7 @@
 
       <div class="overflow-x-hidden border-gray-200 border-b">
         <div class="get-to-know-me container mx-auto text-xl pb-16 relative">
-          <h1 id="about" class="font-bold mb-6 text-2xl">Get to know me:</h1>
+          <h1 id="about" class="font-bold mb-6 text-2xl">Get to know me</h1>
 
           <div
             class="absolute left-0"
@@ -127,7 +127,7 @@
       <div class="overflow-x-hidden">
         <div class="contact-me bg-background-secondary pt-6">
           <div class="container mx-auto text-xl pb-1 relative">
-            <h2 id="contact" class="font-bold mb-6">Contact me:</h2>
+            <h2 id="contact" class="font-bold mb-6">Contact me</h2>
 
             <div
               class="absolute right-0 top-0"
