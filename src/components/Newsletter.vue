@@ -6,7 +6,8 @@
       <h2 class="font-bold text-2xl sm:text-3xl">
         Want the latest blog posts?
       </h2>
-      <span class="text-sm">Sign up for my newsletter and stay updated!</span>
+      <div class="text-sm">I will send an email once or twice a month.</div>
+      <div class="text-sm">Sign up for my newsletter and stay updated!</div>
     </div>
     <form method="POST" :action="action">
       <div class="w-full mb-5 px-5">
