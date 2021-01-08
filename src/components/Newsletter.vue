@@ -1,13 +1,15 @@
 <template>
   <div
-    class="text-center mb-6 container mx-auto pb-1 relative bg-background-secondary"
+    class="text-center mb-2 container mx-auto py-4 relative bg-background-secondary border-b border-t"
   >
-    <h2 class="font-bold text-2xl sm:text-3xl">Want the latest blog posts?</h2>
-    <span class="mb-6 text-sm"
-      >Sign up for my newsletter and stay updated!</span
-    >
-    <form method="POST" class="my-3" :action="action">
-      <div class="w-full mb-6 px-4">
+    <div class="w-full mb-5">
+      <h2 class="font-bold text-2xl sm:text-3xl">
+        Want the latest blog posts?
+      </h2>
+      <span class="text-sm">Sign up for my newsletter and stay updated!</span>
+    </div>
+    <form method="POST" :action="action">
+      <div class="w-full mb-5 px-5">
         <input
           type="email"
           name="EMAIL"

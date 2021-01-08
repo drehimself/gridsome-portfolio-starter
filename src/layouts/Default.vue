@@ -93,9 +93,9 @@
 
     <footer class="bg-green-700 text-white">
       <div
-        class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
+        class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-4"
       >
-        <div class="mb-8 lg:mb-0">
+        <div class="text-center sm:text-left mb-2 sm:mb-0">
           <div>
             Copyright {{ new Date().getFullYear() }}. All rights reserved.
           </div>

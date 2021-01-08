@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <div
-      class="hero container mx-auto flex flex-col sm:flex-row justify-between py-16"
+      class="hero container mx-auto flex flex-col sm:flex-row justify-between py-6"
     >
-      <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
+      <div class="text-3xl md:text-4xl font-bold w-full text-center">
         <div class="leading-tight">Unofficial Beckhoff and TwinCAT Blog</div>
         <div class="text-green-700 leading-tight">
           Discoveries, musings and insights
@@ -12,15 +12,15 @@
     </div>
 
     <div class="container mx-auto">
-      <p class="text-lg sm:text-xl">
+      <p class="text-lg sm:text-xl sm:px-4">
         This is my personal blog for all things related to Beckhoff, TwinCAT,
         industrial automation, IoT, data aggregation, data Visualization,
         Grafana, Timescale, PostgreSQL, and any other related technologies.
       </p>
 
-      <div class="overflow-x-hidden">
+      <div class="overflow-x-hidden mt-2">
         <div
-          class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+          class="projects container mx-auto text-xl border-t border-gray-500 border-b pt-8 mb-8 relative"
         >
           <h1 id="projects" class="font-bold mb-6 text-2xl">
             Most recent blog posts
@@ -59,7 +59,7 @@
       </div>
 
       <div class="overflow-x-hidden border-gray-200 border-b">
-        <div class="get-to-know-me container mx-auto text-xl pb-16 relative">
+        <div class="get-to-know-me container mx-auto text-xl pb-8 relative">
           <h1 id="about" class="font-bold mb-6 text-2xl">Get to know me</h1>
 
           <div
@@ -72,7 +72,7 @@
           </div>
 
           <div
-            class="flex flex-col sm:flex-row justify-between items-center mb-16"
+            class="flex flex-col sm:flex-row justify-between items-center mb-8"
           >
             <div>
               <g-image
@@ -125,7 +125,7 @@
       </div>
 
       <div class="overflow-x-hidden">
-        <div class="contact-me bg-background-secondary pt-6 mb-12">
+        <div class="contact-me bg-background-secondary pt-6 mb-12 border-b">
           <div class="container mx-auto text-xl pb-1 relative">
             <h2 id="contact" class="font-bold mb-6">Contact me</h2>
 
