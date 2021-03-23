@@ -42,6 +42,7 @@ After your dev server is running, you can run `npm run test` or `./node_modules/
 
 ## Notes
 
+ - When Gridsome moves to Vue 3, I'll update this repo as well. I'll also update to Tailwind v2, along with other Tailwind v2 goodies like dark mode and the JIT.
  - Based on my [personal portfolio website](https://andremadarang.com). I wanted to create an open source version with more features.
  - Check out a [screencast I did](https://www.youtube.com/watch?v=uHo6o1TNQeE) where I go through the process of building my website.
  - Illustrations from [unDraw](https://undraw.co)
