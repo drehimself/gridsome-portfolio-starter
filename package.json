@@ -20,7 +20,7 @@
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
-    "cypress": "^6.8.0",
+    "cypress": "^10.3.1",
     "gridsome-plugin-tailwindcss": "^3.0.1"
   }
 }
