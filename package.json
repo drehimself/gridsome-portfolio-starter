@@ -12,7 +12,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@gridsome/vue-remark": "^0.2.6",
-    "axios": "^0.21.1",
+    "axios": "^1.2.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-rss": "^1.2.0",
