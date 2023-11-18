@@ -1,5 +1,7 @@
 # Gridsome Portfolio Starter
 
+Check out the Astro version here: [https://github.com/drehimself/astro-portfolio-starter](https://github.com/drehimself/astro-portfolio-starter)
+
 A simple portfolio starter theme for Gridsome
 
 ![screenshot](https://user-images.githubusercontent.com/4316355/55691365-a2403380-596b-11e9-93be-05b846ec7760.jpg)
