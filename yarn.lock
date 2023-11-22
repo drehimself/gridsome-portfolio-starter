@@ -4839,10 +4839,10 @@ function-bind@^1.1.1:
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-fuse.js@^3.4.6:
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/fuse.js/-/fuse.js-3.6.1.tgz"
-  integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
+fuse.js@^6.4.4:
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.6.tgz#62f216c110e5aa22486aff20be7896d19a059b79"
+  integrity sha512-/gYxR/0VpXmWSfZOIPS3rWwU8SHgsRTwWuXhyb2O6s7aRuVtHtxCkR33bNYu3wyLyNx/Wpv0vU7FZy8Vj53VNw==
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -11092,12 +11092,12 @@ vscode-textmate@^5.2.0:
   resolved "https://registry.npmjs.org/vscode-textmate/-/vscode-textmate-5.2.0.tgz"
   integrity sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==
 
-vue-fuse@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/vue-fuse/-/vue-fuse-2.2.1.tgz"
-  integrity sha512-J2XlMEwxXOayN86pXr44C7cF13C2TZyt3KfAew+4DuUlEa2c/pUKiM8gV2WfYTjQRUpF4VSAfaESY0XCf+4oFg==
+vue-fuse@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/vue-fuse/-/vue-fuse-3.0.2.tgz#3fafb2933fbbf42aecbeb7b824a382edbc753c29"
+  integrity sha512-p9a4ZWGCIrb76VGRofbg3CnxOIAfDBjbimjTqKbeY1/rChm26Tvq0+BhHAA/8Fn42eLN5nuuFEJ4mScvRUfqRw==
   dependencies:
-    fuse.js "^3.4.6"
+    fuse.js "^6.4.4"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
